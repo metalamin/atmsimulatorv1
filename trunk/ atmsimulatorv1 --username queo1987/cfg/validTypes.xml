@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.4.2_06" class="java.beans.XMLDecoder"> 
+ <object class="java.util.HashMap"> 
+  <void method="put"> 
+   <string>TYPES</string> 
+   <string>java.lang.String,java.lang.Integer,java.lang.Long,java.util.Vector</string> 
+  </void> 
+  <void method="put"> 
+   <string>java.lang.String</string> 
+   <string>tools.stateeditor.graphics.validtypes.StringType</string> 
+  </void>
+  <void method="put"> 
+   <string>java.lang.Integer</string> 
+   <string>tools.stateeditor.graphics.validtypes.IntegerType</string> 
+  </void>
+  <void method="put"> 
+   <string>java.lang.Long</string> 
+   <string>tools.stateeditor.graphics.validtypes.LongType</string> 
+  </void>
+  <void method="put"> 
+   <string>java.util.Vector</string> 
+   <string>tools.stateeditor.graphics.validtypes.VectorType</string> 
+  </void>  
+ </object> 
+</java> 

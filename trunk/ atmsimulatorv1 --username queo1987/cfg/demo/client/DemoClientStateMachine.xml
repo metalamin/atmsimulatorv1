@@ -1,0 +1,2074 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.5.0_04" class="java.beans.XMLDecoder"> 
+ <object class="domain.state.StateHandlerBean"> 
+  <void property="states"> 
+   <void method="add"> 
+    <object class="domain.state.StateBean"> 
+     <void property="name"> 
+      <string>ENTER_PIN</string> 
+     </void> 
+     <void property="startupTrigger"> 
+      <void property="actions"> 
+       <void method="add"> 
+        <object class="infrastructure.devices.controllers.tio.TioReadAction"/> 
+       </void> 
+       <void method="add"> 
+        <object class="presentation.display.DisplayAction"> 
+         <void property="screen"> 
+          <string>cfg/demo/client/screen/D1_EnterPIN.xml</string> 
+         </void> 
+        </object> 
+       </void> 
+      </void> 
+     </void> 
+     <void property="triggers"> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="presentation.display.SetTextAction"> 
+           <void property="comp"> 
+            <string>pwdPin</string> 
+           </void> 
+           <void property="key"> 
+            <string>TEXT</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>ENTER_PIN</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>TEXT_IN_OUT</string> 
+        </void> 
+        <void property="type"> 
+         <string>O_TIO_READ_KEY</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>SELECT_OPERATION</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>ENTER_PIN</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>TEXT_IN_OUT</string> 
+        </void> 
+        <void property="type"> 
+         <string>O_TIO_READ</string> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object class="domain.state.StateBean"> 
+     <void property="name"> 
+      <string>SELECT_DESTINATION_ACCOUNT</string> 
+     </void> 
+     <void property="startupTrigger"> 
+      <void property="actions"> 
+       <void method="add"> 
+        <object class="presentation.display.DisplayAction"> 
+         <void property="screen"> 
+          <string>cfg/demo/client/screen/D1_SelectAccount.xml</string> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="presentation.display.SetTextAction"> 
+         <void property="comp"> 
+          <string>lblTitle</string> 
+         </void> 
+         <void property="text"> 
+          <string>Select destination account</string> 
+         </void> 
+        </object> 
+       </void> 
+      </void> 
+     </void> 
+     <void property="triggers"> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>Account1</string> 
+           </void> 
+           <void property="key"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CardAcctId[0].AcctType</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>SELECT_CURRENCY</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>SELECT_DESTINATION_ACCOUNT</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnAccount1</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>Account2</string> 
+           </void> 
+           <void property="key"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CardAcctId[0].AcctType</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>SELECT_CURRENCY</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>SELECT_DESTINATION_ACCOUNT</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnAccount2</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>Account3</string> 
+           </void> 
+           <void property="key"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CardAcctId[0].AcctType</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>SELECT_CURRENCY</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>SELECT_DESTINATION_ACCOUNT</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnAccount3</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>Account4</string> 
+           </void> 
+           <void property="key"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CardAcctId[0].AcctType</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>SELECT_CURRENCY</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>SELECT_DESTINATION_ACCOUNT</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnAccount4</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object class="domain.state.StateBean"> 
+     <void property="name"> 
+      <string>ANOTHER_OPERATION</string> 
+     </void> 
+     <void property="startupTrigger"> 
+      <void property="actions"> 
+       <void method="add"> 
+        <object class="presentation.display.DisplayAction"> 
+         <void property="screen"> 
+          <string>cfg/demo/client/screen/D1_AnotherOperation.xml</string> 
+         </void> 
+        </object> 
+       </void> 
+      </void> 
+     </void> 
+     <void property="triggers"> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>SELECT_OPERATION</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>ANOTHER_OPERATION</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnYes</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>INSERT_CARD</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>ANOTHER_OPERATION</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnNo</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object class="domain.state.StateBean"> 
+     <void property="name"> 
+      <string>GLOBAL_STATE</string> 
+     </void> 
+     <void property="triggers"> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.ExternalCommandAction"> 
+           <void property="key"> 
+            <string>MediaSvcRq[0].DevActionRq[0].ActionsInfo[0]</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>GLOBAL_STATE</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>HOST_COMMAND_CHANNEL</string> 
+        </void> 
+        <void property="type"> 
+         <string>COMM_TYPE</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="domain.implementation.DebugAction"> 
+           <void property="outputText"> 
+            <string>Host was disconnected</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.Delay"> 
+           <void property="waitTime"> 
+            <long>5000</long> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.ConnectAction"/> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>GLOBAL_STATE</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>ATM_REQUEST_CHANNEL</string> 
+        </void> 
+        <void property="type"> 
+         <string>DISCONNECT_TYPE</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.implementation.CountBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="domain.implementation.DebugAction"> 
+           <void property="outputText"> 
+            <string>Se ha superado la cantidad maxima de intentos de conexion infructuosos</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.Delay"> 
+           <void property="waitTime"> 
+            <long>1000</long> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.SystemExit"/> 
+         </void> 
+        </void> 
+        <void property="count"> 
+         <int>3</int> 
+        </void> 
+        <void property="countTriggers"> 
+         <object class="java.util.Vector"> 
+          <void method="add"> 
+           <object class="domain.implementation.TriggerValues"> 
+            <void property="thrower"> 
+             <string>ATM_REQUEST_CHANNEL</string> 
+            </void> 
+            <void property="type"> 
+             <string>DISCONNECT_TYPE</string> 
+            </void> 
+           </object> 
+          </void> 
+         </object> 
+        </void> 
+        <void property="state"> 
+         <string>GLOBAL_STATE</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>COUNT</string> 
+        </void> 
+        <void property="type"> 
+         <string>COUNT</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>OUT_OF_SERVICE</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="presentation.display.SetTextAction"> 
+           <void property="comp"> 
+            <string>lblSecondLine</string> 
+           </void> 
+           <void property="text"> 
+            <string>No Magnetic Stripe Device present</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>GLOBAL_STATE</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>MAGSTRIPE</string> 
+        </void> 
+        <void property="type"> 
+         <string>E_MSD_NOMEDIA</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>OUT_OF_SERVICE</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="presentation.display.SetTextAction"> 
+           <void property="comp"> 
+            <string>lblSecondLine</string> 
+           </void> 
+           <void property="text"> 
+            <string>Magnetic Stripe - Read operation failed</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>GLOBAL_STATE</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>MAGSTRIPE</string> 
+        </void> 
+        <void property="type"> 
+         <string>E_MSD_READFAILURE</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>OUT_OF_SERVICE</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="presentation.display.SetTextAction"> 
+           <void property="comp"> 
+            <string>lblSecondLine</string> 
+           </void> 
+           <void property="text"> 
+            <string>Keyboard device - Read operation failed</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>GLOBAL_STATE</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>TEXT_IN_OUT</string> 
+        </void> 
+        <void property="type"> 
+         <string>E_TIO_READ</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>OUT_OF_SERVICE</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="presentation.display.SetTextAction"> 
+           <void property="comp"> 
+            <string>lblSecondLine</string> 
+           </void> 
+           <void property="text"> 
+            <string>Keyboard device - LED failed</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>GLOBAL_STATE</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>TEXT_IN_OUT</string> 
+        </void> 
+        <void property="type"> 
+         <string>E_TIO_LED</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>OUT_OF_SERVICE</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="presentation.display.SetTextAction"> 
+           <void property="comp"> 
+            <string>lblSecondLine</string> 
+           </void> 
+           <void property="text"> 
+            <string>Printer device - Data overflow</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>GLOBAL_STATE</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>PTR</string> 
+        </void> 
+        <void property="type"> 
+         <string>E_PTR_MEDIA_OVERFLOW</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>OUT_OF_SERVICE</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="presentation.display.SetTextAction"> 
+           <void property="comp"> 
+            <string>lblSecondLine</string> 
+           </void> 
+           <void property="text"> 
+            <string>Printer device - Paper out</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>GLOBAL_STATE</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>PTR</string> 
+        </void> 
+        <void property="type"> 
+         <string>E_PTR_PAPEROUT</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>OUT_OF_SERVICE</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="presentation.display.SetTextAction"> 
+           <void property="comp"> 
+            <string>lblSecondLine</string> 
+           </void> 
+           <void property="text"> 
+            <string>Printer device - No media present</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>GLOBAL_STATE</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>PTR</string> 
+        </void> 
+        <void property="type"> 
+         <string>E_PTR_NO_MEDIA_PRESENT</string> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object class="domain.state.StateBean"> 
+     <void property="name"> 
+      <string>SELECT_SOURCE_ACCOUNT</string> 
+     </void> 
+     <void property="startupTrigger"> 
+      <void property="actions"> 
+       <void method="add"> 
+        <object class="presentation.display.DisplayAction"> 
+         <void property="screen"> 
+          <string>cfg/demo/client/screen/D1_SelectAccount.xml</string> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="presentation.display.SetTextAction"> 
+         <void property="comp"> 
+          <string>lblTitle</string> 
+         </void> 
+         <void property="text"> 
+          <string>Select source account</string> 
+         </void> 
+        </object> 
+       </void> 
+      </void> 
+     </void> 
+     <void property="triggers"> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>Account1</string> 
+           </void> 
+           <void property="key"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CardAcctId[0].AcctType</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>SELECT_DESTINATION_ACCOUNT</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>SELECT_SOURCE_ACCOUNT</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnAccount1</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>Account2</string> 
+           </void> 
+           <void property="key"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CardAcctId[0].AcctType</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>SELECT_DESTINATION_ACCOUNT</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>SELECT_SOURCE_ACCOUNT</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnAccount2</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>Account3</string> 
+           </void> 
+           <void property="key"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CardAcctId[0].AcctType</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>SELECT_DESTINATION_ACCOUNT</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>SELECT_SOURCE_ACCOUNT</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnAccount3</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>Account4</string> 
+           </void> 
+           <void property="key"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CardAcctId[0].AcctType</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>SELECT_DESTINATION_ACCOUNT</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>SELECT_SOURCE_ACCOUNT</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnAccount4</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object class="domain.state.StateBean"> 
+     <void property="name"> 
+      <string>INSERT_CARD</string> 
+     </void> 
+     <void property="startupTrigger"> 
+      <void property="actions"> 
+       <void method="add"> 
+        <object class="infrastructure.devices.controllers.msd.MsdReadAction"/> 
+       </void> 
+       <void method="add"> 
+        <object class="infrastructure.communication.action.ClearMessageAction"/> 
+       </void> 
+       <void method="add"> 
+        <object class="presentation.display.DisplayAction"> 
+         <void property="screen"> 
+          <string>cfg/demo/client/screen/D1_InsertCard.xml</string> 
+         </void> 
+        </object> 
+       </void> 
+      </void> 
+     </void> 
+     <void property="triggers"> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="domain.implementation.KeyMapAction"> 
+           <void property="sourceKey"> 
+            <string>MSD_TRACK2</string> 
+           </void> 
+           <void property="targetKey"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CardAcctId[0].CardMagData.MagData2</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="key"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CardAcctId[0].CardMagData.MagData2</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>ENTER_PIN</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>INSERT_CARD</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>MAGSTRIPE</string> 
+        </void> 
+        <void property="type"> 
+         <string>O_MSD_READDATA</string> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object class="domain.state.StateBean"> 
+     <void property="name"> 
+      <string>SELECT_WITHDRAWAL_ACCOUNT</string> 
+     </void> 
+     <void property="startupTrigger"> 
+      <void property="actions"> 
+       <void method="add"> 
+        <object class="presentation.display.DisplayAction"> 
+         <void property="screen"> 
+          <string>cfg/demo/client/screen/D1_SelectAccount.xml</string> 
+         </void> 
+        </object> 
+       </void> 
+      </void> 
+     </void> 
+     <void property="triggers"> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>Account1</string> 
+           </void> 
+           <void property="key"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CardAcctId[0].AcctType</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>SELECT_CURRENCY</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>SELECT_WITHDRAWAL_ACCOUNT</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnAccount1</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>Account2</string> 
+           </void> 
+           <void property="key"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CardAcctId[0].AcctType</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>SELECT_CURRENCY</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>SELECT_WITHDRAWAL_ACCOUNT</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnAccount2</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>Account3</string> 
+           </void> 
+           <void property="key"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CardAcctId[0].AcctType</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>SELECT_CURRENCY</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>SELECT_WITHDRAWAL_ACCOUNT</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnAccount3</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>Account4</string> 
+           </void> 
+           <void property="key"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CardAcctId[0].AcctType</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>SELECT_CURRENCY</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>SELECT_WITHDRAWAL_ACCOUNT</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnAccount4</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object class="domain.state.StateBean"> 
+     <void property="name"> 
+      <string>ENTER_AMMOUNT</string> 
+     </void> 
+     <void property="startupTrigger"> 
+      <void property="actions"> 
+       <void method="add"> 
+        <object class="infrastructure.devices.controllers.tio.TioReadAction"/> 
+       </void> 
+       <void method="add"> 
+        <object class="presentation.display.DisplayAction"> 
+         <void property="screen"> 
+          <string>cfg/demo/client/screen/D1_EnterAmmount.xml</string> 
+         </void> 
+        </object> 
+       </void> 
+      </void> 
+     </void> 
+     <void property="triggers"> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="presentation.display.SetTextAction"> 
+           <void property="comp"> 
+            <string>txtAmmount</string> 
+           </void> 
+           <void property="key"> 
+            <string>TEXT</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>ENTER_AMMOUNT</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>TEXT_IN_OUT</string> 
+        </void> 
+        <void property="type"> 
+         <string>O_TIO_READ_KEY</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="domain.implementation.KeyMapAction"> 
+           <void property="sourceKey"> 
+            <string>TEXT</string> 
+           </void> 
+           <void property="targetKey"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CompositeCurAmt[0].CurAmt.Amt</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <int>0</int> 
+           </void> 
+           <void property="key"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CompositeCurAmt[0].CurAmt.Amt</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>PROCESS_REQUEST</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>ENTER_AMMOUNT</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>TEXT_IN_OUT</string> 
+        </void> 
+        <void property="type"> 
+         <string>O_TIO_READ</string> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object class="domain.state.StateBean"> 
+     <void property="name"> 
+      <string>PROCESS_REQUEST</string> 
+     </void> 
+     <void property="startupTrigger"> 
+      <void property="actions"> 
+       <void method="add"> 
+        <object class="presentation.display.DisplayAction"> 
+         <void property="screen"> 
+          <string>cfg/demo/client/screen/D1_ProcessRequest.xml</string> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="infrastructure.communication.action.SendMessageAction"> 
+         <void property="channelName"> 
+          <string>ATM_REQUEST_CHANNEL</string> 
+         </void> 
+         <void property="msgId"> 
+          <string>MESSAGE.OUT</string> 
+         </void> 
+        </object> 
+       </void> 
+      </void> 
+     </void> 
+     <void property="triggers"> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.ExternalCommandAction"> 
+           <void property="key"> 
+            <string>MediaSvcRq[0].DevActionRq[0].ActionsInfo[0]</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>PROCESS_REQUEST</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>ATM_REQUEST_CHANNEL</string> 
+        </void> 
+        <void property="type"> 
+         <string>COMM_TYPE</string> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object class="domain.state.StateBean"> 
+     <void property="name"> 
+      <string>INITIAL_STATE</string> 
+     </void> 
+     <void property="startupTrigger"> 
+      <void property="actions"> 
+       <void method="add"> 
+        <object class="infrastructure.devices.OpenDeviceManagerAction"/> 
+       </void> 
+       <void method="add"> 
+        <object class="presentation.display.DisplayAction"> 
+         <void property="screen"> 
+          <string>cfg/demo/client/screen/D1_Initializing.xml</string> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="infrastructure.communication.action.ConnectAction"/> 
+       </void> 
+       <void method="add"> 
+        <object class="infrastructure.devices.controllers.OpenDeviceAction"> 
+         <void property="deviceName"> 
+          <string>TextInOut</string> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="infrastructure.devices.controllers.OpenDeviceAction"> 
+         <void property="deviceName"> 
+          <string>MagStripe</string> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="infrastructure.devices.controllers.OpenDeviceAction"> 
+         <void property="deviceName"> 
+          <string>DocuPrinter</string> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="infrastructure.communication.action.CreateMessageAction"> 
+         <void property="msgId"> 
+          <string>MESSAGE.OUT</string> 
+         </void> 
+        </object> 
+       </void> 
+      </void> 
+     </void> 
+     <void property="triggers"> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.devices.controllers.DisplayDeviceAction"> 
+           <void property="guiPosition"> 
+            <int>4</int> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>INITIAL_STATE</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>MAGSTRIPE</string> 
+        </void> 
+        <void property="type"> 
+         <string>O_OPEN</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.devices.controllers.DisplayDeviceAction"> 
+           <void property="guiPosition"> 
+            <int>3</int> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>INITIAL_STATE</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>TEXT_IN_OUT</string> 
+        </void> 
+        <void property="type"> 
+         <string>O_OPEN</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.devices.controllers.DisplayDeviceAction"> 
+           <void property="guiPosition"> 
+            <int>2</int> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>INITIAL_STATE</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>PTR</string> 
+        </void> 
+        <void property="type"> 
+         <string>O_OPEN</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.implementation.CountBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>OUT_OF_SERVICE</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="count"> 
+         <int>3</int> 
+        </void> 
+        <void property="countTriggers"> 
+         <object class="java.util.Vector"> 
+          <void method="add"> 
+           <object class="domain.implementation.TriggerValues"> 
+            <void property="thrower"> 
+             <string>MAGSTRIPE</string> 
+            </void> 
+            <void property="type"> 
+             <string>O_OPEN</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="domain.implementation.TriggerValues"> 
+            <void property="thrower"> 
+             <string>TEXT_IN_OUT</string> 
+            </void> 
+            <void property="type"> 
+             <string>O_OPEN</string> 
+            </void> 
+           </object> 
+          </void> 
+          <void method="add"> 
+           <object class="domain.implementation.TriggerValues"> 
+            <void property="thrower"> 
+             <string>PTR</string> 
+            </void> 
+            <void property="type"> 
+             <string>O_OPEN</string> 
+            </void> 
+           </object> 
+          </void> 
+         </object> 
+        </void> 
+        <void property="state"> 
+         <string>INITIAL_STATE</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>COUNT_TRIGGER_THROWER</string> 
+        </void> 
+        <void property="type"> 
+         <string>COUNT_TRIGGER_TYPE</string> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object class="domain.state.StateBean"> 
+     <void property="name"> 
+      <string>SELECT_BALANCE_ACCOUNT</string> 
+     </void> 
+     <void property="startupTrigger"> 
+      <void property="actions"> 
+       <void method="add"> 
+        <object class="presentation.display.DisplayAction"> 
+         <void property="screen"> 
+          <string>cfg/demo/client/screen/D1_SelectAccount.xml</string> 
+         </void> 
+        </object> 
+       </void> 
+      </void> 
+     </void> 
+     <void property="triggers"> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>Account1</string> 
+           </void> 
+           <void property="key"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CardAcctId[0].AcctType</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>PROCESS_REQUEST</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>SELECT_BALANCE_ACCOUNT</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnAccount1</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>Account2</string> 
+           </void> 
+           <void property="key"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CardAcctId[0].AcctType</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>PROCESS_REQUEST</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>SELECT_BALANCE_ACCOUNT</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnAccount2</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>Account3</string> 
+           </void> 
+           <void property="key"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CardAcctId[0].AcctType</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>PROCESS_REQUEST</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>SELECT_BALANCE_ACCOUNT</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnAccount3</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>Account4</string> 
+           </void> 
+           <void property="key"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CardAcctId[0].AcctType</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>PROCESS_REQUEST</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>SELECT_BALANCE_ACCOUNT</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnAccount4</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object class="domain.state.StateBean"> 
+     <void property="name"> 
+      <string>SELECT_OPERATION</string> 
+     </void> 
+     <void property="startupTrigger"> 
+      <void property="actions"> 
+       <void method="add"> 
+        <object class="presentation.display.DisplayAction"> 
+         <void property="screen"> 
+          <string>cfg/demo/client/screen/D1_SelectOperation.xml</string> 
+         </void> 
+        </object> 
+       </void> 
+      </void> 
+     </void> 
+     <void property="triggers"> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>PIN Change</string> 
+           </void> 
+           <void property="key"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.DebitAuthType</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>ENTER_NEW_PIN</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>SELECT_OPERATION</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnChangePIN</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>Withdrawal</string> 
+           </void> 
+           <void property="key"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.DebitAuthType</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>SELECT_WITHDRAWAL_ACCOUNT</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>SELECT_OPERATION</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnWithdrawal</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>Transfer</string> 
+           </void> 
+           <void property="key"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.DebitAuthType</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>SELECT_BALANCE_ACCOUNT</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>SELECT_OPERATION</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnBalance</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>Transfer</string> 
+           </void> 
+           <void property="key"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.DebitAuthType</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>SELECT_SOURCE_ACCOUNT</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>SELECT_OPERATION</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnTransfer</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object class="domain.state.StateBean"> 
+     <void property="name"> 
+      <string>RE_ENTER_NEW_PIN</string> 
+     </void> 
+     <void property="startupTrigger"> 
+      <void property="actions"> 
+       <void method="add"> 
+        <object class="infrastructure.devices.controllers.tio.TioReadAction"/> 
+       </void> 
+       <void method="add"> 
+        <object class="presentation.display.DisplayAction"> 
+         <void property="screen"> 
+          <string>cfg/demo/client/screen/D1_EnterPIN.xml</string> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="presentation.display.SetTextAction"> 
+         <void property="comp"> 
+          <string>lblTitle</string> 
+         </void> 
+         <void property="text"> 
+          <string>Re-Enter your new PIN code</string> 
+         </void> 
+        </object> 
+       </void> 
+      </void> 
+     </void> 
+     <void property="triggers"> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="presentation.display.SetTextAction"> 
+           <void property="comp"> 
+            <string>pwdPin</string> 
+           </void> 
+           <void property="key"> 
+            <string>TEXT</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>RE_ENTER_NEW_PIN</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>TEXT_IN_OUT</string> 
+        </void> 
+        <void property="type"> 
+         <string>O_TIO_READ_KEY</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>PROCESS_REQUEST</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>RE_ENTER_NEW_PIN</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>TEXT_IN_OUT</string> 
+        </void> 
+        <void property="type"> 
+         <string>O_TIO_READ</string> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object class="domain.state.StateBean"> 
+     <void property="name"> 
+      <string>OUT_OF_SERVICE</string> 
+     </void> 
+     <void property="startupTrigger"> 
+      <void property="actions"> 
+       <void method="add"> 
+        <object class="presentation.display.DisplayAction"> 
+         <void property="screen"> 
+          <string>cfg/demo/client/screen/D1_GeneralErrorWithTwoLines.xml</string> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="presentation.display.SetTextAction"> 
+         <void property="comp"> 
+          <string>lblFirstLine</string> 
+         </void> 
+         <void property="text"> 
+          <string>Sorry, ATM Simulator is currently out of service</string> 
+         </void> 
+        </object> 
+       </void> 
+      </void> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object class="domain.state.StateBean"> 
+     <void property="name"> 
+      <string>ENTER_NEW_PIN</string> 
+     </void> 
+     <void property="startupTrigger"> 
+      <void property="actions"> 
+       <void method="add"> 
+        <object class="infrastructure.devices.controllers.tio.TioReadAction"/> 
+       </void> 
+       <void method="add"> 
+        <object class="presentation.display.DisplayAction"> 
+         <void property="screen"> 
+          <string>cfg/demo/client/screen/D1_EnterPIN.xml</string> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="presentation.display.SetTextAction"> 
+         <void property="comp"> 
+          <string>lblTitle</string> 
+         </void> 
+         <void property="text"> 
+          <string>Enter your new PIN code</string> 
+         </void> 
+        </object> 
+       </void> 
+      </void> 
+     </void> 
+     <void property="triggers"> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="presentation.display.SetTextAction"> 
+           <void property="comp"> 
+            <string>pwdPin</string> 
+           </void> 
+           <void property="key"> 
+            <string>TEXT</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>ENTER_NEW_PIN</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>TEXT_IN_OUT</string> 
+        </void> 
+        <void property="type"> 
+         <string>O_TIO_READ_KEY</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>RE_ENTER_NEW_PIN</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>ENTER_NEW_PIN</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>TEXT_IN_OUT</string> 
+        </void> 
+        <void property="type"> 
+         <string>O_TIO_READ</string> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object class="domain.state.StateBean"> 
+     <void property="name"> 
+      <string>SELECT_CURRENCY</string> 
+     </void> 
+     <void property="startupTrigger"> 
+      <void property="actions"> 
+       <void method="add"> 
+        <object class="presentation.display.DisplayAction"> 
+         <void property="screen"> 
+          <string>cfg/demo/client/screen/D1_SelectCurrency.xml</string> 
+         </void> 
+        </object> 
+       </void> 
+      </void> 
+     </void> 
+     <void property="triggers"> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>$U</string> 
+           </void> 
+           <void property="key"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CompositeCurAmt[0].CurAmt.CurCode</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>ENTER_AMMOUNT</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>SELECT_CURRENCY</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnPeso</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>USD</string> 
+           </void> 
+           <void property="key"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CompositeCurAmt[0].CurAmt.CurCode</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>ENTER_AMMOUNT</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>SELECT_CURRENCY</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnUSDollar</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>EUR</string> 
+           </void> 
+           <void property="key"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CompositeCurAmt[0].CurAmt.CurCode</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>ENTER_AMMOUNT</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>SELECT_CURRENCY</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnEuro</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+    </object> 
+   </void> 
+  </void> 
+ </object> 
+</java> 

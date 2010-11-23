@@ -1,0 +1,1254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registry install_date="2010-10-20 10:18:38" version="1.1" last_modified="2010-10-20 10:18:40">
+	<products>
+		<product name="ATM  Simulator v1.1" id="0bd1b989-1edd-11b2-a35e-ce09fb95c42f" version="1.0.0.0" copyright="2006" info_url="" support_url="" location="E:\Program Files (x86)\ATM  Simulator v1.1" last_modified="2010-10-20 10:18:38">
+			<vendor name="" id="0bd1b988-1edd-11b2-a35e-ce09fb95c42f" home_page="" email=""/>
+			<feature name="Application" last_modified="2010-10-20 10:18:38">
+			<![CDATA[This installs the application feature.]]>
+				<component ref_id="0bd1ba92-1edd-11b2-a378-ce09fb95c42f" version="1.0.0.0" location="E:\Program Files (x86)\ATM  Simulator v1.1\Uninstall_ATM  Simulator v1.1\Uninstall_ATM__Simulator_v1.1"/>
+				<component ref_id="0bd1ba93-1edd-11b2-a375-ce09fb95c42f" version="1.0.0.0" location="E:\Program Files (x86)\ATM  Simulator v1.1\ATM_Simulator"/>
+			</feature>
+			<feature name="Help" last_modified="2010-10-20 10:18:38">
+			<![CDATA[This installs the help feature.]]>
+				<component ref_id="0bd1ba92-1edd-11b2-a378-ce09fb95c42f" version="1.0.0.0" location="E:\Program Files (x86)\ATM  Simulator v1.1\Uninstall_ATM  Simulator v1.1\Uninstall_ATM__Simulator_v1.1"/>
+				<component ref_id="0bd1ba93-1edd-11b2-a375-ce09fb95c42f" version="1.0.0.0" location="E:\Program Files (x86)\ATM  Simulator v1.1\ATM_Simulator"/>
+			</feature>
+		</product>
+	</products>
+	<components>
+		<component id="0bd1ba92-1edd-11b2-a378-ce09fb95c42f" version="1.0.0.0" name="InstallAnywhere Uninstall Component" location="E:\Program Files (x86)\ATM  Simulator v1.1\Uninstall_ATM  Simulator v1.1\Uninstall_ATM__Simulator_v1.1">
+			<resource keyfile="false" name="ATM__Simulator_v1.1_InstallLog.log" location="E:\Program Files (x86)\ATM  Simulator v1.1\ATM__Simulator_v1.1_InstallLog.log" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ATM  Simulator v1.1" location="E:\Program Files (x86)\ATM  Simulator v1.1" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="Uninstall_ATM  Simulator v1.1" location="E:\Program Files (x86)\ATM  Simulator v1.1\Uninstall_ATM  Simulator v1.1" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="uninstaller.jar" location="E:\Program Files (x86)\ATM  Simulator v1.1\Uninstall_ATM  Simulator v1.1\uninstaller.jar" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ZGWin32LaunchHelper.exe" location="E:\Program Files (x86)\ATM  Simulator v1.1\Uninstall_ATM  Simulator v1.1\resource\ZGWin32LaunchHelper.exe" type="file" uninstall="true"/>
+			<resource keyfile="false" name=".com.zerog.registry.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\Uninstall_ATM  Simulator v1.1\.com.zerog.registry.xml" type="file" uninstall="true"/>
+		</component>
+		<component id="0bd1ba93-1edd-11b2-a375-ce09fb95c42f" version="1.0.0.0" name="Common" location="E:\Program Files (x86)\ATM  Simulator v1.1\ATM_Simulator">
+			<resource keyfile="false" name="Uninstall_ATM  Simulator v1.1" location="E:\Program Files (x86)\ATM  Simulator v1.1\Uninstall_ATM  Simulator v1.1" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="build" location="E:\Program Files (x86)\ATM  Simulator v1.1\build" type="directory" uninstall="true">
+			<![CDATA[true]]>
+			</resource>
+			<resource keyfile="false" name="classes" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="config" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\config" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="BeanersConfigurator.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\config\BeanersConfigurator.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CommContextConfigurator.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\config\CommContextConfigurator.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ComponentCreatorConfigurator.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\config\ComponentCreatorConfigurator.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Config.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\config\Config.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Configurator.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\config\Configurator.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DeviceContextConfigurator.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\config\DeviceContextConfigurator.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GlobalConfig.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\config\GlobalConfig.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Main.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\config\Main.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MainCommContext.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\config\MainCommContext.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MainCommContextServer.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\config\MainCommContextServer.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MainConfigAllClient.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\config\MainConfigAllClient.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MainConfigAllServer.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\config\MainConfigAllServer.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MainDefaultBeaners.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\config\MainDefaultBeaners.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MainDefaultComponentCreators.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\config\MainDefaultComponentCreators.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MainDefaultConfigurators.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\config\MainDefaultConfigurators.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MainDefaultConfiguratorsServer.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\config\MainDefaultConfiguratorsServer.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MainDefaultObjectCreators.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\config\MainDefaultObjectCreators.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MainDeviceContext.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\config\MainDeviceContext.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MainSetProperties.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\config\MainSetProperties.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ObjectCreatorConfigurator.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\config\ObjectCreatorConfigurator.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="SystemConfig.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\config\SystemConfig.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="domain" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="implementation" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\implementation" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="ConditionalAction.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\implementation\ConditionalAction.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CountAction.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\implementation\CountAction.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CountBean.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\implementation\CountBean.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CountBeaner.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\implementation\CountBeaner.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CountTrigger.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\implementation\CountTrigger.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DebugAction.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\implementation\DebugAction.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Delay.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\implementation\Delay.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DoTimeOutTimerTask.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\implementation\DoTimeOutTimerTask.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="EventImpl.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\implementation\EventImpl.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="KeyMapAction.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\implementation\KeyMapAction.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="PersistAction.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\implementation\PersistAction.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Reset.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\implementation\Reset.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateChange.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\implementation\StateChange.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Stop.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\implementation\Stop.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="SystemExit.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\implementation\SystemExit.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TimeOut.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\implementation\TimeOut.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TimeOutBean.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\implementation\TimeOutBean.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TimeOutBeaner.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\implementation\TimeOutBeaner.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TriggerValues.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\implementation\TriggerValues.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="state" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\state" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="Action.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\state\Action.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Event.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\state\Event.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="InvalidStateException.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\state\InvalidStateException.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="InvalidTriggerException.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\state\InvalidTriggerException.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="State.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\state\State.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateBean.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\state\StateBean.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateBeaner.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\state\StateBeaner.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateConstants.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\state\StateConstants.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateHandler.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\state\StateHandler.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateHandlerBean.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\state\StateHandlerBean.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateHandlerBeaner.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\state\StateHandlerBeaner.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateHandlerFactory.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\state\StateHandlerFactory.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateHandlerImpl.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\state\StateHandlerImpl.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Trigger.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\state\Trigger.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TriggerBean.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\state\TriggerBean.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TriggerBeaner.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\state\TriggerBeaner.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TriggerFactory.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\state\TriggerFactory.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TriggerImpl.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\state\TriggerImpl.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="statemachine" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\statemachine" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="IUpdateListener.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\statemachine\IUpdateListener.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="SetStateTask.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\statemachine\SetStateTask.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateMachine.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\statemachine\StateMachine.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateMachineFactory.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\statemachine\StateMachineFactory.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateMachineImpl.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\statemachine\StateMachineImpl.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Synchronizer.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\statemachine\Synchronizer.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Task.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\statemachine\Task.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="UpdateTask.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\domain\statemachine\UpdateTask.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="infrastructure" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="communication" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\communication" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="action" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\communication\action" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="ClearMessageAction.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\communication\action\ClearMessageAction.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ConnectAction.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\communication\action\ConnectAction.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ConnectChannel.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\communication\action\ConnectChannel.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CreateMessageAction.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\communication\action\CreateMessageAction.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DisconnectAction.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\communication\action\DisconnectAction.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DisconnectChannel.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\communication\action\DisconnectChannel.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ExternalCommandAction.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\communication\action\ExternalCommandAction.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GetElementAction.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\communication\action\GetElementAction.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="SendMessageAction.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\communication\action\SendMessageAction.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="SetElementAction.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\communication\action\SetElementAction.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="SetElementsAction.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\communication\action\SetElementsAction.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CommunicationConfig.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\communication\CommunicationConfig.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CommunicationConstants.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\communication\CommunicationConstants.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CommunicationException.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\communication\CommunicationException.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CommunicationHandler.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\communication\CommunicationHandler.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CommunicationHandlerFactory.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\communication\CommunicationHandlerFactory.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CommunicationHandlerImpl.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\communication\CommunicationHandlerImpl.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Receiver.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\communication\Receiver.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="dataaccess" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\dataaccess" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="broker" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\dataaccess\broker" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="Beaner.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\dataaccess\broker\Beaner.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="BeanerFactory.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\dataaccess\broker\BeanerFactory.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="BeanerHandler.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\dataaccess\broker\BeanerHandler.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="BeanerHandlerFactory.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\dataaccess\broker\BeanerHandlerFactory.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="BeanerHandlerImpl.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\dataaccess\broker\BeanerHandlerImpl.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Broker.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\dataaccess\broker\Broker.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="BrokerFactory.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\dataaccess\broker\BrokerFactory.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="BrokerImpl.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\dataaccess\broker\BrokerImpl.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DefaultBeaner.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\dataaccess\broker\DefaultBeaner.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="NullBeaner.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\dataaccess\broker\NullBeaner.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Connectable.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\dataaccess\Connectable.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DataAccessException.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\dataaccess\DataAccessException.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="InvalidIDException.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\dataaccess\InvalidIDException.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="PersistenceException.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\dataaccess\PersistenceException.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="PersistentCollectionFactory.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\dataaccess\PersistentCollectionFactory.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="PersistentMap.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\dataaccess\PersistentMap.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="sequential" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\dataaccess\sequential" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="SequentialFactory.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\dataaccess\sequential\SequentialFactory.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="SequentialReader.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\dataaccess\sequential\SequentialReader.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="SequentialReaderImpl.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\dataaccess\sequential\SequentialReaderImpl.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="SequentialWriter.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\dataaccess\sequential\SequentialWriter.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="SequentialWriterImpl.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\dataaccess\sequential\SequentialWriterImpl.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="XMLCollectionReader.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\dataaccess\XMLCollectionReader.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="XMLCollectionWriter.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\dataaccess\XMLCollectionWriter.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="devices" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="controllers" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\controllers" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="DisplayDeviceAction.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\controllers\DisplayDeviceAction.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="IDeviceController.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\controllers\IDeviceController.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="jxfs" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\controllers\jxfs" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="DeviceManager.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\controllers\jxfs\DeviceManager.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="JxfsDeviceFactory.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\controllers\jxfs\JxfsDeviceFactory.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="JxfsImplConst.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\controllers\jxfs\JxfsImplConst.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="JxfsMsdController.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\controllers\jxfs\JxfsMsdController.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="JxfsPtrController.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\controllers\jxfs\JxfsPtrController.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="JxfsTioController.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\controllers\jxfs\JxfsTioController.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="msd" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\controllers\msd" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="IMsdConst.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\controllers\msd\IMsdConst.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="IMsdController.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\controllers\msd\IMsdController.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MsdDisplayAction.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\controllers\msd\MsdDisplayAction.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MsdReadAction.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\controllers\msd\MsdReadAction.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MsdTracks.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\controllers\msd\MsdTracks.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MsdTrackSelection.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\controllers\msd\MsdTrackSelection.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="OpenDeviceAction.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\controllers\OpenDeviceAction.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ptr" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\controllers\ptr" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="IPtrConst.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\controllers\ptr\IPtrConst.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="IPtrController.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\controllers\ptr\IPtrController.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="PtrPrintDocAction.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\controllers\ptr\PtrPrintDocAction.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="tio" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\controllers\tio" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="ITioConst.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\controllers\tio\ITioConst.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ITioController.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\controllers\tio\ITioController.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TioDisplayAction.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\controllers\tio\TioDisplayAction.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TioReadAction.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\controllers\tio\TioReadAction.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DeviceConfig.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\DeviceConfig.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DeviceConstants.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\DeviceConstants.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DeviceHandler.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\DeviceHandler.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DeviceHandlerFactory.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\DeviceHandlerFactory.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DeviceHandlerImpl.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\DeviceHandlerImpl.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="events" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\events" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="DeviceEvent.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\events\DeviceEvent.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DeviceException.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\events\DeviceException.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="general" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\general" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="DeviceDataType.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\general\DeviceDataType.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DeviceInformation.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\general\DeviceInformation.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DeviceMediaStatus.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\general\DeviceMediaStatus.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DeviceStatus.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\general\DeviceStatus.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="IDeviceConst.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\general\IDeviceConst.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="IDeviceManager.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\general\IDeviceManager.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="OpenDeviceManagerAction.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\devices\OpenDeviceManagerAction.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="services" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="comm" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="channel" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\channel" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="Channel.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\channel\Channel.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CommFactory.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\channel\CommFactory.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="rpc" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\channel\rpc" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="RPCChannel.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\channel\rpc\RPCChannel.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="RPCCommConstants.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\channel\rpc\RPCCommConstants.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="RPCCommDriver.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\channel\rpc\RPCCommDriver.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="RPCCommDriverImpl.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\channel\rpc\RPCCommDriverImpl.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="RPCCommFactory.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\channel\rpc\RPCCommFactory.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="RPCMessage.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\channel\rpc\RPCMessage.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="RPCMessageFactory.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\channel\rpc\RPCMessageFactory.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="RPCPackager.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\channel\rpc\RPCPackager.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="tcp" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\channel\tcp" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="DefaultTCPPackager.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\channel\tcp\DefaultTCPPackager.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TCPChannelInfo.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\channel\tcp\TCPChannelInfo.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TCPClient.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\channel\tcp\TCPClient.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TCPClientInfo.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\channel\tcp\TCPClientInfo.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TCPCommConstants.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\channel\tcp\TCPCommConstants.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TCPCommFactory.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\channel\tcp\TCPCommFactory.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TCPServer.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\channel\tcp\TCPServer.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TCPServerInfo.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\channel\tcp\TCPServerInfo.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CommConstants.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\CommConstants.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CommException.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\CommException.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="message" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\message" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="ifx" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\message\ifx" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="IFXMessage.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\message\ifx\IFXMessage.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="IFXMessageFactory.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\message\ifx\IFXMessageFactory.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="IFXPackager.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\message\ifx\IFXPackager.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Message.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\message\Message.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MessageFactory.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\message\MessageFactory.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Packager.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\comm\message\Packager.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="jxfs" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="general" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\general" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="GeneralDeviceGUI$1.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\general\GeneralDeviceGUI$1.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GeneralDeviceGUI$2.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\general\GeneralDeviceGUI$2.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GeneralDeviceGUI.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\general\GeneralDeviceGUI.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="IWindowEventListener.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\general\IWindowEventListener.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="msd" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\msd" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="GeneralMagneticStripeGui$1.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\msd\GeneralMagneticStripeGui$1.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GeneralMagneticStripeGui$2.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\msd\GeneralMagneticStripeGui$2.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GeneralMagneticStripeGui.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\msd\GeneralMagneticStripeGui.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="IMagneticStripe.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\msd\IMagneticStripe.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MagneticStripeDeviceGUI$1.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\msd\MagneticStripeDeviceGUI$1.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MagneticStripeDeviceGUI$2$1.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\msd\MagneticStripeDeviceGUI$2$1.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MagneticStripeDeviceGUI$2$2.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\msd\MagneticStripeDeviceGUI$2$2.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MagneticStripeDeviceGUI$2$3.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\msd\MagneticStripeDeviceGUI$2$3.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MagneticStripeDeviceGUI$2.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\msd\MagneticStripeDeviceGUI$2.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MagneticStripeDeviceGUI.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\msd\MagneticStripeDeviceGUI.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MagneticStripeHardwareSimulator.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\msd\MagneticStripeHardwareSimulator.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MagneticStripeReadServiceJob.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\msd\MagneticStripeReadServiceJob.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MagneticStripeService.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\msd\MagneticStripeService.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MagneticStripeWriteServiceJob.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\msd\MagneticStripeWriteServiceJob.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ptr" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\ptr" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="PrinterDeviceGUI$1$1.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\ptr\PrinterDeviceGUI$1$1.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="PrinterDeviceGUI$1$2.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\ptr\PrinterDeviceGUI$1$2.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="PrinterDeviceGUI$1$3.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\ptr\PrinterDeviceGUI$1$3.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="PrinterDeviceGUI$1$4.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\ptr\PrinterDeviceGUI$1$4.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="PrinterDeviceGUI$1.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\ptr\PrinterDeviceGUI$1.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="PrinterDeviceGUI$2.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\ptr\PrinterDeviceGUI$2.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="PrinterDeviceGUI$3.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\ptr\PrinterDeviceGUI$3.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="PrinterDeviceGUI.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\ptr\PrinterDeviceGUI.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="PrinterService$1.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\ptr\PrinterService$1.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="PrinterService$1PrintFormJob.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\ptr\PrinterService$1PrintFormJob.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="PrinterService.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\ptr\PrinterService.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="PrinterServiceJob.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\ptr\PrinterServiceJob.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="tio" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\tio" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="TextInOutBeepServiceJob.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\tio\TextInOutBeepServiceJob.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutClearScreenServiceJob.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\tio\TextInOutClearScreenServiceJob.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutDeviceGui$1.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\tio\TextInOutDeviceGui$1.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutDeviceGui$10.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\tio\TextInOutDeviceGui$10.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutDeviceGui$11.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\tio\TextInOutDeviceGui$11.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutDeviceGui$12.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\tio\TextInOutDeviceGui$12.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutDeviceGui$13.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\tio\TextInOutDeviceGui$13.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutDeviceGui$14$1.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\tio\TextInOutDeviceGui$14$1.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutDeviceGui$14$2.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\tio\TextInOutDeviceGui$14$2.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutDeviceGui$14$3.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\tio\TextInOutDeviceGui$14$3.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutDeviceGui$14.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\tio\TextInOutDeviceGui$14.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutDeviceGui$15.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\tio\TextInOutDeviceGui$15.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutDeviceGui$16.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\tio\TextInOutDeviceGui$16.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutDeviceGui$2.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\tio\TextInOutDeviceGui$2.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutDeviceGui$3.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\tio\TextInOutDeviceGui$3.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutDeviceGui$4.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\tio\TextInOutDeviceGui$4.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutDeviceGui$5.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\tio\TextInOutDeviceGui$5.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutDeviceGui$6.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\tio\TextInOutDeviceGui$6.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutDeviceGui$7.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\tio\TextInOutDeviceGui$7.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutDeviceGui$8.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\tio\TextInOutDeviceGui$8.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutDeviceGui$9.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\tio\TextInOutDeviceGui$9.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutDeviceGui.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\tio\TextInOutDeviceGui.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutLightDisplayServiceJob.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\tio\TextInOutLightDisplayServiceJob.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutReadKeyboardDataServiceJob.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\tio\TextInOutReadKeyboardDataServiceJob.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutService.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\tio\TextInOutService.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutSetLedServiceJob.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\tio\TextInOutSetLedServiceJob.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutWriteDisplayDataServiceJob.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\infrastructure\services\jxfs\tio\TextInOutWriteDisplayDataServiceJob.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="presentation" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\presentation" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="display" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\presentation\display" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="AppendTextAction.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\presentation\display\AppendTextAction.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Behavior.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\presentation\display\Behavior.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ButtonBehavior.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\presentation\display\ButtonBehavior.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ButtonEvent.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\presentation\display\ButtonEvent.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ButtonListener.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\presentation\display\ButtonListener.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DictBehavior.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\presentation\display\DictBehavior.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Display.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\presentation\display\Display.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DisplayAction.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\presentation\display\DisplayAction.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DisplayAloneAction.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\presentation\display\DisplayAloneAction.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GetTextAction.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\presentation\display\GetTextAction.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="SetTextAction.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\presentation\display\SetTextAction.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Simulator$1.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\presentation\display\Simulator$1.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Simulator.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\presentation\display\Simulator.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="IGUIBuilder.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\presentation\IGUIBuilder.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="screen" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\presentation\screen" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="Button.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\presentation\screen\Button.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="IButtonComponent.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\presentation\screen\IButtonComponent.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="IComponent.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\presentation\screen\IComponent.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ITextComponent.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\presentation\screen\ITextComponent.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Label.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\presentation\screen\Label.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="PasswordBox.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\presentation\screen\PasswordBox.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Screen.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\presentation\screen\Screen.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ScreenBean.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\presentation\screen\ScreenBean.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ScreenBeaner.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\presentation\screen\ScreenBeaner.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextBox.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\presentation\screen\TextBox.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="splash" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\presentation\splash" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="SplashScreen.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\presentation\splash\SplashScreen.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="test" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\test" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="other" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\test\other" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="BeanManagerTest.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\test\other\BeanManagerTest.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Clase.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\test\other\Clase.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestAtmGui.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\test\other\TestAtmGui.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestCommRPC.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\test\other\TestCommRPC.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestCommRPCReceiver.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\test\other\TestCommRPCReceiver.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestCommRPCSender.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\test\other\TestCommRPCSender.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestCommTCPReceiver.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\test\other\TestCommTCPReceiver.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestCommTCPSender.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\test\other\TestCommTCPSender.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestDisplay.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\test\other\TestDisplay.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestGlobalState.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\test\other\TestGlobalState.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestIFXMessage.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\test\other\TestIFXMessage.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestIFXMessage2.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\test\other\TestIFXMessage2.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestLoadAndExeXML.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\test\other\TestLoadAndExeXML.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestMaquinaDeEstados.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\test\other\TestMaquinaDeEstados.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestMaquinaDeEstadosComunicada.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\test\other\TestMaquinaDeEstadosComunicada.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestSaveXML.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\test\other\TestSaveXML.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestSaveXML_JXFS.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\test\other\TestSaveXML_JXFS.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestSaveXML_Prototype.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\test\other\TestSaveXML_Prototype.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestSimulador.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\test\other\TestSimulador.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestTCPServer.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\test\other\TestTCPServer.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestTimeOutXML.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\test\other\TestTimeOutXML.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestXMLEncoder.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\test\other\TestXMLEncoder.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestAtmServer.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\test\TestAtmServer.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestAtmSimulator.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\test\TestAtmSimulator.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestSaveXmlAtmSimulator.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\test\TestSaveXmlAtmSimulator.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestSaveXmlServer.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\test\TestSaveXmlServer.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="tools" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="screeneditor" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="Editor$1.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\Editor$1.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Editor$2.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\Editor$2.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Editor$3.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\Editor$3.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Editor$4.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\Editor$4.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Editor$5.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\Editor$5.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Editor.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\Editor.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="graphics" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\graphics" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="AdvancedFontChooser$1.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\graphics\AdvancedFontChooser$1.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="AdvancedFontChooser$2.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\graphics\AdvancedFontChooser$2.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="AdvancedFontChooser$3.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\graphics\AdvancedFontChooser$3.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="AdvancedFontChooser$4.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\graphics\AdvancedFontChooser$4.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="AdvancedFontChooser.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\graphics\AdvancedFontChooser.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ColorComboBox$ColorComboRenderer1.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\graphics\ColorComboBox$ColorComboRenderer1.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ColorComboBox.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\graphics\ColorComboBox.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ExampleFileFilter.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\graphics\ExampleFileFilter.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="FontLabel.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\graphics\FontLabel.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="InputList$AccessibleOpenList.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\graphics\InputList$AccessibleOpenList.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="InputList$OpelListLabel.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\graphics\InputList$OpelListLabel.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="InputList$OpelListList.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\graphics\InputList$OpelListList.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="InputList$OpelListText.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\graphics\InputList$OpelListText.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="InputList.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\graphics\InputList.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="validtypes" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\graphics\validtypes" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="ColorMenuType$1.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\graphics\validtypes\ColorMenuType$1.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ColorMenuType.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\graphics\validtypes\ColorMenuType.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ComponentFactory.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\graphics\validtypes\ComponentFactory.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="FontMenuType$1.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\graphics\validtypes\FontMenuType$1.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="FontMenuType.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\graphics\validtypes\FontMenuType.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="IntegerMenuType.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\graphics\validtypes\IntegerMenuType.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="LongMenuType.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\graphics\validtypes\LongMenuType.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MPBehaviorInterface.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\graphics\validtypes\MPBehaviorInterface.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StringMenuType.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\graphics\validtypes\StringMenuType.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Menu$1.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\Menu$1.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Menu$10.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\Menu$10.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Menu$2.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\Menu$2.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Menu$3.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\Menu$3.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Menu$4.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\Menu$4.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Menu$5.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\Menu$5.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Menu$6.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\Menu$6.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Menu$7.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\Menu$7.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Menu$8.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\Menu$8.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Menu$9.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\Menu$9.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Menu.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\Menu.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MenuPropiedades$1.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\MenuPropiedades$1.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MenuPropiedades.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\MenuPropiedades.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="UrlSelectionDialog$1.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\UrlSelectionDialog$1.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="UrlSelectionDialog$2.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\UrlSelectionDialog$2.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="UrlSelectionDialog$3.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\UrlSelectionDialog$3.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="UrlSelectionDialog.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\screeneditor\UrlSelectionDialog.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="stateeditor" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="beans" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\beans" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="BeanUtils.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\beans\BeanUtils.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateHandlerBeanManager.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\beans\StateHandlerBeanManager.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="components" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\components" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="ComponentCreator.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\components\ComponentCreator.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ComponentCreatorHandler.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\components\ComponentCreatorHandler.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ComponentCreatorHandlerFactory.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\components\ComponentCreatorHandlerFactory.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ComponentCreatorHandlerImpl.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\components\ComponentCreatorHandlerImpl.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TableProperties.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\components\TableProperties.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TablePropertiesComponentCreator.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\components\TablePropertiesComponentCreator.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="datatransform" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\datatransform" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="IntegerDataTransform.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\datatransform\IntegerDataTransform.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="LongDataTransform.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\datatransform\LongDataTransform.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TPDataTransformFactory.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\datatransform\TPDataTransformFactory.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TPropertiesDataTransform.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\datatransform\TPropertiesDataTransform.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="EditionPanelTriggers$1.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\EditionPanelTriggers$1.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="EditionPanelTriggers$2.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\EditionPanelTriggers$2.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="EditionPanelTriggers$3.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\EditionPanelTriggers$3.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="EditionPanelTriggers.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\EditionPanelTriggers.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="EditonPanelActions$1.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\EditonPanelActions$1.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="EditonPanelActions$2.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\EditonPanelActions$2.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="EditonPanelActions$3.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\EditonPanelActions$3.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="EditonPanelActions$4.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\EditonPanelActions$4.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="EditonPanelActions$5.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\EditonPanelActions$5.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="EditonPanelActions$6.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\EditonPanelActions$6.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="EditonPanelActions.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\EditonPanelActions.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="graphics" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="ActionTableCellEditor.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\ActionTableCellEditor.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GraphEd$1.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\GraphEd$1.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GraphEd$10.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\GraphEd$10.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GraphEd$11.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\GraphEd$11.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GraphEd$12.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\GraphEd$12.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GraphEd$13.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\GraphEd$13.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GraphEd$14.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\GraphEd$14.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GraphEd$15.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\GraphEd$15.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GraphEd$16.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\GraphEd$16.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GraphEd$2.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\GraphEd$2.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GraphEd$3.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\GraphEd$3.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GraphEd$4.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\GraphEd$4.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GraphEd$5.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\GraphEd$5.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GraphEd$6.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\GraphEd$6.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GraphEd$7.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\GraphEd$7.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GraphEd$8.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\GraphEd$8.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GraphEd$9.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\GraphEd$9.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GraphEd$EventRedirector.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\GraphEd$EventRedirector.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GraphEd$MyEdgeHandle.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\GraphEd$MyEdgeHandle.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GraphEd$MyGraph$1.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\GraphEd$MyGraph$1.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GraphEd$MyGraph.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\GraphEd$MyGraph.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GraphEd$MyMarqueeHandler.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\GraphEd$MyMarqueeHandler.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GraphEd$MyModel.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\GraphEd$MyModel.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GraphEd.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\GraphEd.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="JTableButtonModel.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\JTableButtonModel.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="JTableButtonMouseListener.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\JTableButtonMouseListener.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="JTableButtonRenderer.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\JTableButtonRenderer.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ListSelectionDialog$1.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\ListSelectionDialog$1.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ListSelectionDialog$2.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\ListSelectionDialog$2.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ListSelectionDialog$3.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\ListSelectionDialog$3.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ListSelectionDialog$4.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\ListSelectionDialog$4.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ListSelectionDialog$5.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\ListSelectionDialog$5.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ListSelectionDialog.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\ListSelectionDialog.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MultiCellTable.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\MultiCellTable.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MyGraphCell.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\MyGraphCell.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="RowEditorModel.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\RowEditorModel.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateMachinePanel$1.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\StateMachinePanel$1.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateMachinePanel$2.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\StateMachinePanel$2.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateMachinePanel.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\StateMachinePanel.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="validtypes" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\validtypes" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="IntegerType.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\validtypes\IntegerType.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="LongType.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\validtypes\LongType.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StringType.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\validtypes\StringType.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ValidTypesBehaviorInterface.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\validtypes\ValidTypesBehaviorInterface.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ValidTypesFactory.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\validtypes\ValidTypesFactory.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="VectorType$MyButtonActionListener.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\validtypes\VectorType$MyButtonActionListener.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="VectorType.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\graphics\validtypes\VectorType.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="objects" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\objects" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="ObjectCreatorHandler.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\objects\ObjectCreatorHandler.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ObjectCreatorHandlerFactory.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\objects\ObjectCreatorHandlerFactory.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ObjectCreatorHandlerImpl.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\objects\ObjectCreatorHandlerImpl.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="observer" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\observer" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="Observer.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\observer\Observer.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Subject.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\observer\Subject.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateEditor$1.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\StateEditor$1.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateEditor$2.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\StateEditor$2.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateEditor$3.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\StateEditor$3.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateEditor$4.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\StateEditor$4.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateEditor$5.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\StateEditor$5.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateEditor$6.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\StateEditor$6.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateEditor$7.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\StateEditor$7.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateEditor$8.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\StateEditor$8.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateEditor$9.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\StateEditor$9.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateEditor.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\StateEditor.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateMachinePanel$1.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\StateMachinePanel$1.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateMachinePanel$2.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\StateMachinePanel$2.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateMachinePanel.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\tools\stateeditor\StateMachinePanel.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="util" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\util" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="ClassUtils.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\util\ClassUtils.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Creator.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\util\Creator.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DefaultCreator.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\util\DefaultCreator.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GeneralException.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\util\GeneralException.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TimeUnits.class" location="E:\Program Files (x86)\ATM  Simulator v1.1\build\classes\util\TimeUnits.class" type="file" uninstall="true"/>
+			<resource keyfile="false" name="build.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\build.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="buildAtmSimulator.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\buildAtmSimulator.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="cfg" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg" type="directory" uninstall="true">
+			<![CDATA[true]]>
+			</resource>
+			<resource keyfile="false" name="beaners.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\beaners.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="comm_context.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\comm_context.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="comm_context_server.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\comm_context_server.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="config.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\config.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="configurators.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\configurators.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="configurators_server.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\configurators_server.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="demo" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="client" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="DemoClientStateMachine.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\DemoClientStateMachine.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DemoClientStateMachine.xml.conf" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\DemoClientStateMachine.xml.conf" type="file" uninstall="true"/>
+			<resource keyfile="false" name="screen" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="D1_AnotherOperation.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\D1_AnotherOperation.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="D1_EnterAmmount.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\D1_EnterAmmount.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="D1_EnterPIN.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\D1_EnterPIN.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="D1_GeneralErrorWithTwoLines.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\D1_GeneralErrorWithTwoLines.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="D1_Initializing.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\D1_Initializing.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="D1_InsertCard.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\D1_InsertCard.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="D1_ProcessRequest.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\D1_ProcessRequest.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="D1_SelectAccount.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\D1_SelectAccount.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="D1_SelectCurrency.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\D1_SelectCurrency.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="D1_SelectOperation.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\D1_SelectOperation.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="D1_Shutdown.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\D1_Shutdown.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="resources" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\resources" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="Background1Component.htm" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\resources\Background1Component.htm" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Background1Component.jpg" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\resources\Background1Component.jpg" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Background1ComponentCenter.htm" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\resources\Background1ComponentCenter.htm" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Background1ComponentCenter.jpg" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\resources\Background1ComponentCenter.jpg" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Background3ComponentsRight.htm" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\resources\Background3ComponentsRight.htm" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Background3ComponentsRight.jpg" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\resources\Background3ComponentsRight.jpg" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Background4Options.htm" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\resources\Background4Options.htm" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Background4Options.jpg" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\resources\Background4Options.jpg" type="file" uninstall="true"/>
+			<resource keyfile="false" name="BackgroundCard1Component.htm" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\resources\BackgroundCard1Component.htm" type="file" uninstall="true"/>
+			<resource keyfile="false" name="BackgroundCard1Component.jpg" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\resources\BackgroundCard1Component.jpg" type="file" uninstall="true"/>
+			<resource keyfile="false" name="BackgroundGeneralError2Lines.htm" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\resources\BackgroundGeneralError2Lines.htm" type="file" uninstall="true"/>
+			<resource keyfile="false" name="BackgroundGeneralError2Lines.jpg" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\resources\BackgroundGeneralError2Lines.jpg" type="file" uninstall="true"/>
+			<resource keyfile="false" name="BackgroundMsgYesNo.htm" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\resources\BackgroundMsgYesNo.htm" type="file" uninstall="true"/>
+			<resource keyfile="false" name="BackgroundMsgYesNo.jpg" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\resources\BackgroundMsgYesNo.jpg" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Backgrounds.ppt" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\resources\Backgrounds.ppt" type="file" uninstall="true"/>
+			<resource keyfile="false" name="BackgroundShutdown.htm" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\resources\BackgroundShutdown.htm" type="file" uninstall="true"/>
+			<resource keyfile="false" name="BackgroundShutdown.jpg" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\resources\BackgroundShutdown.jpg" type="file" uninstall="true"/>
+			<resource keyfile="false" name="money_world.gif" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\resources\money_world.gif" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Thumbs.db" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\resources\Thumbs.db" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Thumbs.db" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\client\screen\Thumbs.db" type="file" uninstall="true"/>
+			<resource keyfile="false" name="server" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\server" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="DemoServerStateMachine.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\server\DemoServerStateMachine.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DemoServerStateMachine.xml.conf" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\server\DemoServerStateMachine.xml.conf" type="file" uninstall="true"/>
+			<resource keyfile="false" name="screen" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\server\screen" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="D1_AtmDisconnected.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\server\screen\D1_AtmDisconnected.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="D1_MainPanel.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\server\screen\D1_MainPanel.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="D1_Withdrawal.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\server\screen\D1_Withdrawal.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="resources" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\server\screen\resources" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="Background4Options.htm" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\server\screen\resources\Background4Options.htm" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Background4Options.jpg" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\server\screen\resources\Background4Options.jpg" type="file" uninstall="true"/>
+			<resource keyfile="false" name="BackgroundAtmDisconnected.htm" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\server\screen\resources\BackgroundAtmDisconnected.htm" type="file" uninstall="true"/>
+			<resource keyfile="false" name="BackgroundAtmDisconnected.jpg" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\server\screen\resources\BackgroundAtmDisconnected.jpg" type="file" uninstall="true"/>
+			<resource keyfile="false" name="BackgroundInfoYesNo.htm" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\server\screen\resources\BackgroundInfoYesNo.htm" type="file" uninstall="true"/>
+			<resource keyfile="false" name="BackgroundInfoYesNo.jpg" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\demo\server\screen\resources\BackgroundInfoYesNo.jpg" type="file" uninstall="true"/>
+			<resource keyfile="false" name="devices_context.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\devices_context.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ifx" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\ifx" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="1.7" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\ifx\1.7" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="IFX170.xsd" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\ifx\1.7\IFX170.xsd" type="file" uninstall="true"/>
+			<resource keyfile="false" name="IFX170_extended.xsd" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\ifx\1.7\IFX170_extended.xsd" type="file" uninstall="true"/>
+			<resource keyfile="false" name="pain.001.001.01.xsd" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\ifx\1.7\pain.001.001.01.xsd" type="file" uninstall="true"/>
+			<resource keyfile="false" name="pain.002.001.01.xsd" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\ifx\1.7\pain.002.001.01.xsd" type="file" uninstall="true"/>
+			<resource keyfile="false" name="pain.004.001.01.xsd" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\ifx\1.7\pain.004.001.01.xsd" type="file" uninstall="true"/>
+			<resource keyfile="false" name="RemitDetail_Type.xsd" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\ifx\1.7\RemitDetail_Type.xsd" type="file" uninstall="true"/>
+			<resource keyfile="false" name="samples" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\ifx\samples" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="IFX_Debit_Add_Request.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\ifx\samples\IFX_Debit_Add_Request.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="IFX_Debit_Add_Request_Out.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\ifx\samples\IFX_Debit_Add_Request_Out.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="IFX_Debit_Add_Request_Rec.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\ifx\samples\IFX_Debit_Add_Request_Rec.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="jxfs" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\jxfs" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="others" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\jxfs\others" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="bctdemo.cfg" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\jxfs\others\bctdemo.cfg" type="file" uninstall="true"/>
+			<resource keyfile="false" name="demo.cfg" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\jxfs\others\demo.cfg" type="file" uninstall="true"/>
+			<resource keyfile="false" name="logserverdemo.cfg" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\jxfs\others\logserverdemo.cfg" type="file" uninstall="true"/>
+			<resource keyfile="false" name="serverdemo.cfg" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\jxfs\others\serverdemo.cfg" type="file" uninstall="true"/>
+			<resource keyfile="false" name="server" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\jxfs\server" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="bct.cfg" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\jxfs\server\bct.cfg" type="file" uninstall="true"/>
+			<resource keyfile="false" name="developerWorks.bct" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\jxfs\server\developerWorks.bct" type="file" uninstall="true"/>
+			<resource keyfile="false" name="logserver.cfg" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\jxfs\server\logserver.cfg" type="file" uninstall="true"/>
+			<resource keyfile="false" name="server.cfg" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\jxfs\server\server.cfg" type="file" uninstall="true"/>
+			<resource keyfile="false" name="objectcreators.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\objectcreators.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="properties.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\properties.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="resources" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\resources" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="connectoff.gif" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\resources\connectoff.gif" type="file" uninstall="true"/>
+			<resource keyfile="false" name="connecton.gif" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\resources\connecton.gif" type="file" uninstall="true"/>
+			<resource keyfile="false" name="copy.gif" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\resources\copy.gif" type="file" uninstall="true"/>
+			<resource keyfile="false" name="cut.gif" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\resources\cut.gif" type="file" uninstall="true"/>
+			<resource keyfile="false" name="delete.gif" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\resources\delete.gif" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ExceptionIcon.jpg" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\resources\ExceptionIcon.jpg" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ExceptionIcon2.jpg" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\resources\ExceptionIcon2.jpg" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ExceptionIcon2Small.JPG" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\resources\ExceptionIcon2Small.JPG" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ExceptionIcon2VerySmall.JPG" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\resources\ExceptionIcon2VerySmall.JPG" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ExceptionIcon3.jpg" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\resources\ExceptionIcon3.jpg" type="file" uninstall="true"/>
+			<resource keyfile="false" name="group.gif" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\resources\group.gif" type="file" uninstall="true"/>
+			<resource keyfile="false" name="insert.gif" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\resources\insert.gif" type="file" uninstall="true"/>
+			<resource keyfile="false" name="jgraph.gif" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\resources\jgraph.gif" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Logo.jpg" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\resources\Logo.jpg" type="file" uninstall="true"/>
+			<resource keyfile="false" name="LogoMediumSize.jpg" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\resources\LogoMediumSize.jpg" type="file" uninstall="true"/>
+			<resource keyfile="false" name="paste.gif" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\resources\paste.gif" type="file" uninstall="true"/>
+			<resource keyfile="false" name="port.gif" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\resources\port.gif" type="file" uninstall="true"/>
+			<resource keyfile="false" name="redo.gif" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\resources\redo.gif" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Thumbs.db" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\resources\Thumbs.db" type="file" uninstall="true"/>
+			<resource keyfile="false" name="toback.gif" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\resources\toback.gif" type="file" uninstall="true"/>
+			<resource keyfile="false" name="tofront.gif" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\resources\tofront.gif" type="file" uninstall="true"/>
+			<resource keyfile="false" name="undo.gif" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\resources\undo.gif" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ungroup.gif" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\resources\ungroup.gif" type="file" uninstall="true"/>
+			<resource keyfile="false" name="zoom.gif" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\resources\zoom.gif" type="file" uninstall="true"/>
+			<resource keyfile="false" name="zoomin.gif" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\resources\zoomin.gif" type="file" uninstall="true"/>
+			<resource keyfile="false" name="zoomout.gif" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\resources\zoomout.gif" type="file" uninstall="true"/>
+			<resource keyfile="false" name="tableDataTransform.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\tableDataTransform.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Thumbs.db" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\Thumbs.db" type="file" uninstall="true"/>
+			<resource keyfile="false" name="validTypes.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\cfg\validTypes.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="dist" location="E:\Program Files (x86)\ATM  Simulator v1.1\dist" type="directory" uninstall="true">
+			<![CDATA[true]]>
+			</resource>
+			<resource keyfile="false" name="AtmSimulator.jar" location="E:\Program Files (x86)\ATM  Simulator v1.1\dist\AtmSimulator.jar" type="file" uninstall="true"/>
+			<resource keyfile="false" name="lib" location="E:\Program Files (x86)\ATM  Simulator v1.1\lib" type="directory" uninstall="true">
+			<![CDATA[true]]>
+			</resource>
+			<resource keyfile="false" name="ifx-framework-1.2-1.jar" location="E:\Program Files (x86)\ATM  Simulator v1.1\lib\ifx-framework-1.2-1.jar" type="file" uninstall="true"/>
+			<resource keyfile="false" name="jdom.jar" location="E:\Program Files (x86)\ATM  Simulator v1.1\lib\jdom.jar" type="file" uninstall="true"/>
+			<resource keyfile="false" name="jgraph.jar" location="E:\Program Files (x86)\ATM  Simulator v1.1\lib\jgraph.jar" type="file" uninstall="true"/>
+			<resource keyfile="false" name="junit.jar" location="E:\Program Files (x86)\ATM  Simulator v1.1\lib\junit.jar" type="file" uninstall="true"/>
+			<resource keyfile="false" name="jxfsclient2.1.3.jar" location="E:\Program Files (x86)\ATM  Simulator v1.1\lib\jxfsclient2.1.3.jar" type="file" uninstall="true"/>
+			<resource keyfile="false" name="jxfsserver2.1.3.jar" location="E:\Program Files (x86)\ATM  Simulator v1.1\lib\jxfsserver2.1.3.jar" type="file" uninstall="true"/>
+			<resource keyfile="false" name="jxfssupport2.1.3.jar" location="E:\Program Files (x86)\ATM  Simulator v1.1\lib\jxfssupport2.1.3.jar" type="file" uninstall="true"/>
+			<resource keyfile="false" name="poolman.jar" location="E:\Program Files (x86)\ATM  Simulator v1.1\lib\poolman.jar" type="file" uninstall="true"/>
+			<resource keyfile="false" name="xercesImpl.jar" location="E:\Program Files (x86)\ATM  Simulator v1.1\lib\xercesImpl.jar" type="file" uninstall="true"/>
+			<resource keyfile="false" name="logs" location="E:\Program Files (x86)\ATM  Simulator v1.1\logs" type="directory" uninstall="true">
+			<![CDATA[true]]>
+			</resource>
+			<resource keyfile="false" name="jxfsClient.log" location="E:\Program Files (x86)\ATM  Simulator v1.1\logs\jxfsClient.log" type="file" uninstall="true"/>
+			<resource keyfile="false" name="server.log" location="E:\Program Files (x86)\ATM  Simulator v1.1\logs\server.log" type="file" uninstall="true"/>
+			<resource keyfile="false" name="manifest.mf" location="E:\Program Files (x86)\ATM  Simulator v1.1\manifest.mf" type="file" uninstall="true"/>
+			<resource keyfile="false" name="nbproject" location="E:\Program Files (x86)\ATM  Simulator v1.1\nbproject" type="directory" uninstall="true">
+			<![CDATA[true]]>
+			</resource>
+			<resource keyfile="false" name="build-impl.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\nbproject\build-impl.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="genfiles.properties" location="E:\Program Files (x86)\ATM  Simulator v1.1\nbproject\genfiles.properties" type="file" uninstall="true"/>
+			<resource keyfile="false" name="private" location="E:\Program Files (x86)\ATM  Simulator v1.1\nbproject\private" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="private.properties" location="E:\Program Files (x86)\ATM  Simulator v1.1\nbproject\private\private.properties" type="file" uninstall="true"/>
+			<resource keyfile="false" name="private.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\nbproject\private\private.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="project.properties" location="E:\Program Files (x86)\ATM  Simulator v1.1\nbproject\project.properties" type="file" uninstall="true"/>
+			<resource keyfile="false" name="project.xml" location="E:\Program Files (x86)\ATM  Simulator v1.1\nbproject\project.xml" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Readme.txt" location="E:\Program Files (x86)\ATM  Simulator v1.1\Readme.txt" type="file" uninstall="true"/>
+			<resource keyfile="false" name="repository" location="E:\Program Files (x86)\ATM  Simulator v1.1\repository" type="directory" uninstall="true">
+			<![CDATA[true]]>
+			</resource>
+			<resource keyfile="false" name="Read.repository" location="E:\Program Files (x86)\ATM  Simulator v1.1\repository\Read.repository" type="file" uninstall="true"/>
+			<resource keyfile="false" name="runAtmSimulator.bat" location="E:\Program Files (x86)\ATM  Simulator v1.1\runAtmSimulator.bat" type="file" uninstall="true"/>
+			<resource keyfile="false" name="runDemo.bat" location="E:\Program Files (x86)\ATM  Simulator v1.1\runDemo.bat" type="file" uninstall="true"/>
+			<resource keyfile="false" name="runJxfsServer.bat" location="E:\Program Files (x86)\ATM  Simulator v1.1\runJxfsServer.bat" type="file" uninstall="true"/>
+			<resource keyfile="false" name="runScreenEditor.bat" location="E:\Program Files (x86)\ATM  Simulator v1.1\runScreenEditor.bat" type="file" uninstall="true"/>
+			<resource keyfile="false" name="runServer.bat" location="E:\Program Files (x86)\ATM  Simulator v1.1\runServer.bat" type="file" uninstall="true"/>
+			<resource keyfile="false" name="runStateEditor.bat" location="E:\Program Files (x86)\ATM  Simulator v1.1\runStateEditor.bat" type="file" uninstall="true"/>
+			<resource keyfile="false" name="src" location="E:\Program Files (x86)\ATM  Simulator v1.1\src" type="directory" uninstall="true">
+			<![CDATA[true]]>
+			</resource>
+			<resource keyfile="false" name="config" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\config" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="BeanersConfigurator.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\config\BeanersConfigurator.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CommContextConfigurator.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\config\CommContextConfigurator.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ComponentCreatorConfigurator.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\config\ComponentCreatorConfigurator.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Config.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\config\Config.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Configurator.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\config\Configurator.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DeviceContextConfigurator.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\config\DeviceContextConfigurator.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GlobalConfig.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\config\GlobalConfig.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Main.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\config\Main.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MainCommContext.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\config\MainCommContext.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MainCommContextServer.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\config\MainCommContextServer.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MainConfigAllClient.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\config\MainConfigAllClient.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MainConfigAllServer.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\config\MainConfigAllServer.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MainDefaultBeaners.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\config\MainDefaultBeaners.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MainDefaultComponentCreators.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\config\MainDefaultComponentCreators.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MainDefaultConfigurators.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\config\MainDefaultConfigurators.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MainDefaultConfiguratorsServer.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\config\MainDefaultConfiguratorsServer.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MainDefaultObjectCreators.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\config\MainDefaultObjectCreators.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MainDeviceContext.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\config\MainDeviceContext.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MainSetProperties.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\config\MainSetProperties.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ObjectCreatorConfigurator.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\config\ObjectCreatorConfigurator.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="SystemConfig.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\config\SystemConfig.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="domain" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="implementation" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\implementation" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="ConditionalAction.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\implementation\ConditionalAction.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CountAction.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\implementation\CountAction.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CountBean.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\implementation\CountBean.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CountBeaner.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\implementation\CountBeaner.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CountTrigger.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\implementation\CountTrigger.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DebugAction.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\implementation\DebugAction.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Delay.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\implementation\Delay.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DoTimeOutTimerTask.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\implementation\DoTimeOutTimerTask.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="EventImpl.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\implementation\EventImpl.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="KeyMapAction.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\implementation\KeyMapAction.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="PersistAction.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\implementation\PersistAction.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Reset.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\implementation\Reset.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateChange.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\implementation\StateChange.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Stop.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\implementation\Stop.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="SystemExit.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\implementation\SystemExit.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TimeOut.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\implementation\TimeOut.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TimeOutBean.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\implementation\TimeOutBean.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TimeOutBeaner.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\implementation\TimeOutBeaner.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TriggerValues.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\implementation\TriggerValues.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="state" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\state" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="Action.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\state\Action.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Event.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\state\Event.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="InvalidStateException.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\state\InvalidStateException.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="InvalidTriggerException.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\state\InvalidTriggerException.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="State.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\state\State.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateBean.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\state\StateBean.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateBeaner.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\state\StateBeaner.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateConstants.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\state\StateConstants.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateHandler.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\state\StateHandler.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateHandlerBean.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\state\StateHandlerBean.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateHandlerBeaner.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\state\StateHandlerBeaner.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateHandlerFactory.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\state\StateHandlerFactory.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateHandlerImpl.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\state\StateHandlerImpl.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Trigger.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\state\Trigger.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TriggerBean.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\state\TriggerBean.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TriggerBeaner.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\state\TriggerBeaner.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TriggerFactory.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\state\TriggerFactory.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TriggerImpl.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\state\TriggerImpl.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="statemachine" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\statemachine" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="IUpdateListener.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\statemachine\IUpdateListener.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="SetStateTask.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\statemachine\SetStateTask.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateMachine.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\statemachine\StateMachine.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateMachineFactory.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\statemachine\StateMachineFactory.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateMachineImpl.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\statemachine\StateMachineImpl.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Synchronizer.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\statemachine\Synchronizer.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Task.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\statemachine\Task.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="UpdateTask.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\domain\statemachine\UpdateTask.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="infrastructure" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="communication" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\communication" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="action" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\communication\action" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="ClearMessageAction.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\communication\action\ClearMessageAction.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ConnectAction.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\communication\action\ConnectAction.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ConnectChannel.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\communication\action\ConnectChannel.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CreateMessageAction.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\communication\action\CreateMessageAction.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DisconnectAction.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\communication\action\DisconnectAction.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DisconnectChannel.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\communication\action\DisconnectChannel.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ExternalCommandAction.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\communication\action\ExternalCommandAction.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GetElementAction.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\communication\action\GetElementAction.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="SendMessageAction.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\communication\action\SendMessageAction.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="SetElementAction.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\communication\action\SetElementAction.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="SetElementsAction.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\communication\action\SetElementsAction.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CommunicationConfig.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\communication\CommunicationConfig.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CommunicationConstants.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\communication\CommunicationConstants.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CommunicationException.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\communication\CommunicationException.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CommunicationHandler.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\communication\CommunicationHandler.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CommunicationHandlerFactory.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\communication\CommunicationHandlerFactory.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CommunicationHandlerImpl.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\communication\CommunicationHandlerImpl.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Receiver.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\communication\Receiver.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="dataaccess" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\dataaccess" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="broker" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\dataaccess\broker" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="Beaner.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\dataaccess\broker\Beaner.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="BeanerFactory.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\dataaccess\broker\BeanerFactory.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="BeanerHandler.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\dataaccess\broker\BeanerHandler.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="BeanerHandlerFactory.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\dataaccess\broker\BeanerHandlerFactory.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="BeanerHandlerImpl.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\dataaccess\broker\BeanerHandlerImpl.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Broker.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\dataaccess\broker\Broker.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="BrokerFactory.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\dataaccess\broker\BrokerFactory.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="BrokerImpl.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\dataaccess\broker\BrokerImpl.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DefaultBeaner.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\dataaccess\broker\DefaultBeaner.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="NullBeaner.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\dataaccess\broker\NullBeaner.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Connectable.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\dataaccess\Connectable.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DataAccessException.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\dataaccess\DataAccessException.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="InvalidIDException.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\dataaccess\InvalidIDException.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="PersistenceException.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\dataaccess\PersistenceException.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="PersistentCollectionFactory.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\dataaccess\PersistentCollectionFactory.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="PersistentMap.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\dataaccess\PersistentMap.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="sequential" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\dataaccess\sequential" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="SequentialFactory.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\dataaccess\sequential\SequentialFactory.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="SequentialReader.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\dataaccess\sequential\SequentialReader.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="SequentialReaderImpl.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\dataaccess\sequential\SequentialReaderImpl.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="SequentialWriter.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\dataaccess\sequential\SequentialWriter.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="SequentialWriterImpl.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\dataaccess\sequential\SequentialWriterImpl.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="XMLCollectionReader.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\dataaccess\XMLCollectionReader.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="XMLCollectionWriter.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\dataaccess\XMLCollectionWriter.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="devices" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="controllers" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\controllers" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="DisplayDeviceAction.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\controllers\DisplayDeviceAction.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="IDeviceController.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\controllers\IDeviceController.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="jxfs" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\controllers\jxfs" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="DeviceManager.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\controllers\jxfs\DeviceManager.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="JxfsDeviceFactory.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\controllers\jxfs\JxfsDeviceFactory.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="JxfsImplConst.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\controllers\jxfs\JxfsImplConst.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="JxfsMsdController.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\controllers\jxfs\JxfsMsdController.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="JxfsPtrController.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\controllers\jxfs\JxfsPtrController.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="JxfsTioController.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\controllers\jxfs\JxfsTioController.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="msd" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\controllers\msd" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="IMsdConst.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\controllers\msd\IMsdConst.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="IMsdController.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\controllers\msd\IMsdController.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MsdDisplayAction.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\controllers\msd\MsdDisplayAction.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MsdReadAction.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\controllers\msd\MsdReadAction.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MsdTracks.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\controllers\msd\MsdTracks.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MsdTrackSelection.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\controllers\msd\MsdTrackSelection.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="OpenDeviceAction.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\controllers\OpenDeviceAction.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ptr" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\controllers\ptr" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="IPtrConst.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\controllers\ptr\IPtrConst.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="IPtrController.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\controllers\ptr\IPtrController.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="PtrPrintDocAction.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\controllers\ptr\PtrPrintDocAction.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="tio" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\controllers\tio" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="ITioConst.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\controllers\tio\ITioConst.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ITioController.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\controllers\tio\ITioController.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TioDisplayAction.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\controllers\tio\TioDisplayAction.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TioReadAction.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\controllers\tio\TioReadAction.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DeviceConfig.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\DeviceConfig.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DeviceConstants.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\DeviceConstants.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DeviceHandler.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\DeviceHandler.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DeviceHandlerFactory.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\DeviceHandlerFactory.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DeviceHandlerImpl.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\DeviceHandlerImpl.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="events" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\events" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="DeviceEvent.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\events\DeviceEvent.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DeviceException.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\events\DeviceException.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="general" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\general" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="DeviceDataType.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\general\DeviceDataType.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DeviceInformation.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\general\DeviceInformation.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DeviceMediaStatus.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\general\DeviceMediaStatus.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DeviceStatus.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\general\DeviceStatus.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="IDeviceConst.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\general\IDeviceConst.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="IDeviceManager.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\general\IDeviceManager.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="OpenDeviceManagerAction.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\devices\OpenDeviceManagerAction.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="services" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="comm" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="channel" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\channel" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="Channel.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\channel\Channel.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CommFactory.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\channel\CommFactory.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="rpc" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\channel\rpc" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="RPCChannel.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\channel\rpc\RPCChannel.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="RPCCommConstants.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\channel\rpc\RPCCommConstants.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="RPCCommDriver.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\channel\rpc\RPCCommDriver.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="RPCCommDriverImpl.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\channel\rpc\RPCCommDriverImpl.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="RPCCommFactory.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\channel\rpc\RPCCommFactory.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="RPCMessage.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\channel\rpc\RPCMessage.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="RPCMessageFactory.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\channel\rpc\RPCMessageFactory.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="RPCPackager.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\channel\rpc\RPCPackager.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="tcp" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\channel\tcp" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="DefaultTCPPackager.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\channel\tcp\DefaultTCPPackager.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TCPChannelInfo.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\channel\tcp\TCPChannelInfo.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TCPClient.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\channel\tcp\TCPClient.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TCPClientInfo.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\channel\tcp\TCPClientInfo.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TCPCommConstants.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\channel\tcp\TCPCommConstants.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TCPCommFactory.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\channel\tcp\TCPCommFactory.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TCPServer.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\channel\tcp\TCPServer.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TCPServerInfo.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\channel\tcp\TCPServerInfo.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CommConstants.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\CommConstants.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="CommException.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\CommException.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="message" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\message" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="ifx" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\message\ifx" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="IFXMessage.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\message\ifx\IFXMessage.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="IFXMessageFactory.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\message\ifx\IFXMessageFactory.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="IFXPackager.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\message\ifx\IFXPackager.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Message.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\message\Message.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MessageFactory.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\message\MessageFactory.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Packager.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\comm\message\Packager.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="jxfs" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\jxfs" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="general" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\jxfs\general" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="GeneralDeviceGUI.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\jxfs\general\GeneralDeviceGUI.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="IWindowEventListener.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\jxfs\general\IWindowEventListener.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="msd" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\jxfs\msd" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="GeneralMagneticStripeGui.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\jxfs\msd\GeneralMagneticStripeGui.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="IMagneticStripe.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\jxfs\msd\IMagneticStripe.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MagneticStripeDeviceGUI.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\jxfs\msd\MagneticStripeDeviceGUI.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MagneticStripeHardwareSimulator.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\jxfs\msd\MagneticStripeHardwareSimulator.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MagneticStripeReadServiceJob.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\jxfs\msd\MagneticStripeReadServiceJob.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MagneticStripeService.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\jxfs\msd\MagneticStripeService.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MagneticStripeWriteServiceJob.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\jxfs\msd\MagneticStripeWriteServiceJob.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ptr" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\jxfs\ptr" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="PrinterDeviceGUI.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\jxfs\ptr\PrinterDeviceGUI.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="PrinterService.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\jxfs\ptr\PrinterService.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="PrinterServiceJob.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\jxfs\ptr\PrinterServiceJob.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="tio" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\jxfs\tio" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="TextInOutBeepServiceJob.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\jxfs\tio\TextInOutBeepServiceJob.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutClearScreenServiceJob.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\jxfs\tio\TextInOutClearScreenServiceJob.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutDeviceGui.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\jxfs\tio\TextInOutDeviceGui.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutLightDisplayServiceJob.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\jxfs\tio\TextInOutLightDisplayServiceJob.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutReadKeyboardDataServiceJob.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\jxfs\tio\TextInOutReadKeyboardDataServiceJob.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutService.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\jxfs\tio\TextInOutService.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutSetLedServiceJob.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\jxfs\tio\TextInOutSetLedServiceJob.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextInOutWriteDisplayDataServiceJob.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\infrastructure\services\jxfs\tio\TextInOutWriteDisplayDataServiceJob.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="presentation" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\presentation" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="display" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\presentation\display" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="AppendTextAction.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\presentation\display\AppendTextAction.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Behavior.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\presentation\display\Behavior.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ButtonBehavior.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\presentation\display\ButtonBehavior.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ButtonEvent.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\presentation\display\ButtonEvent.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ButtonListener.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\presentation\display\ButtonListener.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DictBehavior.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\presentation\display\DictBehavior.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Display.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\presentation\display\Display.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DisplayAction.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\presentation\display\DisplayAction.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DisplayAloneAction.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\presentation\display\DisplayAloneAction.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GetTextAction.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\presentation\display\GetTextAction.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="SetTextAction.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\presentation\display\SetTextAction.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Simulator.form" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\presentation\display\Simulator.form" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Simulator.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\presentation\display\Simulator.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="IGUIBuilder.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\presentation\IGUIBuilder.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="screen" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\presentation\screen" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="Button.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\presentation\screen\Button.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="IButtonComponent.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\presentation\screen\IButtonComponent.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="IComponent.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\presentation\screen\IComponent.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ITextComponent.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\presentation\screen\ITextComponent.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Label.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\presentation\screen\Label.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="PasswordBox.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\presentation\screen\PasswordBox.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Screen.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\presentation\screen\Screen.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ScreenBean.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\presentation\screen\ScreenBean.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ScreenBeaner.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\presentation\screen\ScreenBeaner.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TextBox.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\presentation\screen\TextBox.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="splash" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\presentation\splash" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="SplashScreen.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\presentation\splash\SplashScreen.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="test" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\test" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="other" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\test\other" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="BeanManagerTest.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\test\other\BeanManagerTest.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Clase.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\test\other\Clase.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestAtmGui.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\test\other\TestAtmGui.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestCommRPC.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\test\other\TestCommRPC.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestCommRPCReceiver.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\test\other\TestCommRPCReceiver.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestCommRPCSender.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\test\other\TestCommRPCSender.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestCommTCPReceiver.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\test\other\TestCommTCPReceiver.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestCommTCPSender.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\test\other\TestCommTCPSender.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestDisplay.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\test\other\TestDisplay.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestGlobalState.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\test\other\TestGlobalState.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestIFXMessage.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\test\other\TestIFXMessage.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestIFXMessage2.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\test\other\TestIFXMessage2.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestLoadAndExeXML.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\test\other\TestLoadAndExeXML.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestMaquinaDeEstados.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\test\other\TestMaquinaDeEstados.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestMaquinaDeEstadosComunicada.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\test\other\TestMaquinaDeEstadosComunicada.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestSaveXML.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\test\other\TestSaveXML.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestSaveXML_JXFS.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\test\other\TestSaveXML_JXFS.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestSaveXML_Prototype.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\test\other\TestSaveXML_Prototype.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestSimulador.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\test\other\TestSimulador.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestTCPServer.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\test\other\TestTCPServer.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestTimeOutXML.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\test\other\TestTimeOutXML.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestXMLEncoder.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\test\other\TestXMLEncoder.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestAtmServer.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\test\TestAtmServer.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestAtmSimulator.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\test\TestAtmSimulator.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestSaveXmlAtmSimulator.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\test\TestSaveXmlAtmSimulator.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TestSaveXmlServer.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\test\TestSaveXmlServer.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="tools" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="screeneditor" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\screeneditor" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="Editor.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\screeneditor\Editor.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="graphics" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\screeneditor\graphics" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="AdvancedFontChooser.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\screeneditor\graphics\AdvancedFontChooser.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ExampleFileFilter.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\screeneditor\graphics\ExampleFileFilter.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="validtypes" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\screeneditor\graphics\validtypes" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="ColorMenuType.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\screeneditor\graphics\validtypes\ColorMenuType.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ComponentFactory.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\screeneditor\graphics\validtypes\ComponentFactory.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="FontMenuType.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\screeneditor\graphics\validtypes\FontMenuType.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="IntegerMenuType.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\screeneditor\graphics\validtypes\IntegerMenuType.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="LongMenuType.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\screeneditor\graphics\validtypes\LongMenuType.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MPBehaviorInterface.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\screeneditor\graphics\validtypes\MPBehaviorInterface.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StringMenuType.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\screeneditor\graphics\validtypes\StringMenuType.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Menu.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\screeneditor\Menu.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MenuPropiedades.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\screeneditor\MenuPropiedades.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="UrlSelectionDialog.form" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\screeneditor\UrlSelectionDialog.form" type="file" uninstall="true"/>
+			<resource keyfile="false" name="UrlSelectionDialog.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\screeneditor\UrlSelectionDialog.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="stateeditor" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="beans" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\beans" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="BeanUtils.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\beans\BeanUtils.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateHandlerBeanManager.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\beans\StateHandlerBeanManager.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="components" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\components" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="ComponentCreator.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\components\ComponentCreator.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ComponentCreatorHandler.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\components\ComponentCreatorHandler.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ComponentCreatorHandlerFactory.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\components\ComponentCreatorHandlerFactory.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ComponentCreatorHandlerImpl.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\components\ComponentCreatorHandlerImpl.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TableProperties.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\components\TableProperties.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TablePropertiesComponentCreator.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\components\TablePropertiesComponentCreator.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="datatransform" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\datatransform" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="IntegerDataTransform.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\datatransform\IntegerDataTransform.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="LongDataTransform.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\datatransform\LongDataTransform.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TPDataTransformFactory.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\datatransform\TPDataTransformFactory.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TPropertiesDataTransform.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\datatransform\TPropertiesDataTransform.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="EditionPanelTriggers.form" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\EditionPanelTriggers.form" type="file" uninstall="true"/>
+			<resource keyfile="false" name="EditionPanelTriggers.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\EditionPanelTriggers.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="EditonPanelActions.form" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\EditonPanelActions.form" type="file" uninstall="true"/>
+			<resource keyfile="false" name="EditonPanelActions.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\EditonPanelActions.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="graphics" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\graphics" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="ActionTableCellEditor.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\graphics\ActionTableCellEditor.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GraphEd.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\graphics\GraphEd.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="JTableButtonModel.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\graphics\JTableButtonModel.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="JTableButtonMouseListener.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\graphics\JTableButtonMouseListener.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="JTableButtonRenderer.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\graphics\JTableButtonRenderer.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ListSelectionDialog.form" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\graphics\ListSelectionDialog.form" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ListSelectionDialog.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\graphics\ListSelectionDialog.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MultiCellTable.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\graphics\MultiCellTable.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="MyGraphCell.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\graphics\MyGraphCell.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="RowEditorModel.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\graphics\RowEditorModel.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateMachinePanel.form" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\graphics\StateMachinePanel.form" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateMachinePanel.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\graphics\StateMachinePanel.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="validtypes" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\graphics\validtypes" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="IntegerType.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\graphics\validtypes\IntegerType.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="LongType.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\graphics\validtypes\LongType.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StringType.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\graphics\validtypes\StringType.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ValidTypesBehaviorInterface.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\graphics\validtypes\ValidTypesBehaviorInterface.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ValidTypesFactory.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\graphics\validtypes\ValidTypesFactory.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="VectorType.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\graphics\validtypes\VectorType.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="objects" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\objects" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="ObjectCreatorHandler.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\objects\ObjectCreatorHandler.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ObjectCreatorHandlerFactory.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\objects\ObjectCreatorHandlerFactory.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="ObjectCreatorHandlerImpl.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\objects\ObjectCreatorHandlerImpl.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="observer" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\observer" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="Observer.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\observer\Observer.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Subject.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\observer\Subject.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateEditor.form" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\StateEditor.form" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateEditor.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\StateEditor.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateMachinePanel.form" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\StateMachinePanel.form" type="file" uninstall="true"/>
+			<resource keyfile="false" name="StateMachinePanel.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\tools\stateeditor\StateMachinePanel.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="util" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\util" type="directory" uninstall="true">
+			<![CDATA[false]]>
+			</resource>
+			<resource keyfile="false" name="ClassUtils.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\util\ClassUtils.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="Creator.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\util\Creator.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="DefaultCreator.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\util\DefaultCreator.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="GeneralException.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\util\GeneralException.java" type="file" uninstall="true"/>
+			<resource keyfile="false" name="TimeUnits.java" location="E:\Program Files (x86)\ATM  Simulator v1.1\src\util\TimeUnits.java" type="file" uninstall="true"/>
+		</component>
+	</components>
+</registry>

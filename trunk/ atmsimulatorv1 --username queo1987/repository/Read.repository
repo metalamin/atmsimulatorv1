@@ -1,0 +1,44 @@
+# J/XFS repository file: KNOW EXACTLY WHAT YOU ARE DOING WHEN EDITING IT!!
+
+[DEVICE_SPECIFIC]
+developerWorks|MSD|serviceName(String)=infrastructure.services.jxfs.msd.MagneticStripeService
+developerWorks|MSD|controlName(String)=com.jxfs.control.msd.JxfsMagStripe
+developerWorks|MSD|deviceName(String)=MagStripe
+developerWorks|MSD|description(String)=Magnetic Stripe
+developerWorks|MSD|remoteAccess(boolean)=false
+developerWorks|TIO|serviceName(String)=infrastructure.services.jxfs.tio.TextInOutService
+developerWorks|TIO|controlName(String)=com.jxfs.control.tio.JxfsTIO
+developerWorks|TIO|deviceName(String)=TextInOut
+developerWorks|TIO|remoteAccess(boolean)=false
+developerWorks|TIO|description(String)=Text Input/Output
+developerWorks|PTR|serviceName(String)=infrastructure.services.jxfs.ptr.PrinterService
+developerWorks|PTR|controlName(String)=com.jxfs.control.ptr.JxfsDocumentPrinter
+developerWorks|PTR|deviceName(String)=DocuPrinter
+developerWorks|PTR|remoteAccess(boolean)=false
+developerWorks|PTR|description(String)=Document printer
+
+[APPLICATION]
+developerWorks|jxfsClient|defaults(String)=MagStripe(com.jxfs.control.msd.JxfsMagStripe)
+developerWorks|jxfsClient|imagepath(String)=images
+developerWorks|jxfsClient|almguipos_x(int)=50
+developerWorks|jxfsClient|almguipos_y(int)=50
+developerWorks|jxfsClient|almguisize_x(int)=200
+developerWorks|jxfsClient|almguisize_y(int)=200
+developerWorks|jxfsClient|devices(String)=MSD,TIO,PTR
+developerWorks|jxfsClient|pinguisize_x(int)=290
+developerWorks|jxfsClient|pinguisize_y(int)=234
+developerWorks|jxfsClient|pinguipos_x(int)=319
+developerWorks|jxfsClient|pinguipos_y(int)=134
+developerWorks|jxfsClient|tioguipos_x(int)=443
+developerWorks|jxfsClient|tioguipos_y(int)=202
+developerWorks|jxfsClient|tioguisize_x(int)=400
+developerWorks|jxfsClient|tioguisize_y(int)=400
+
+[SERVICETYPE]
+
+[CONTROLTYPE]
+
+[WORKSTATION]
+
+[GENERIC]
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.5.0_04" class="java.beans.XMLDecoder"> 
+ <object class="presentation.screen.ScreenBean"> 
+  <void property="bounds"> 
+   <object class="java.awt.Rectangle"> 
+    <int>0</int> 
+    <int>0</int> 
+    <int>1024</int> 
+    <int>738</int> 
+   </object> 
+  </void> 
+  <void property="components"> 
+   <object class="java.util.Vector"> 
+    <void method="add"> 
+     <object class="presentation.screen.Label"> 
+      <void property="font"> 
+       <object class="javax.swing.plaf.FontUIResource"> 
+        <string>Tahoma</string> 
+        <int>1</int> 
+        <int>16</int> 
+       </object> 
+      </void> 
+      <void property="bounds"> 
+       <object class="java.awt.Rectangle"> 
+        <int>243</int> 
+        <int>292</int> 
+        <int>270</int> 
+        <int>42</int> 
+       </object> 
+      </void> 
+      <void property="name"> 
+       <string>lblSetup</string> 
+      </void> 
+      <void property="text"> 
+       <string>Please insert your card</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void property="url"> 
+   <string>cfg/demo/client/screen/resources/Background1Component.htm</string> 
+  </void> 
+ </object> 
+</java> 

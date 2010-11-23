@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.5.0_04" class="java.beans.XMLDecoder"> 
+ <object class="java.util.LinkedHashMap"> 
+  <void method="put"> 
+   <string>domain.implementation.TimeOut</string> 
+   <object class="domain.implementation.TimeOutBeaner"/> 
+  </void> 
+  <void method="put"> 
+   <string>domain.implementation.TimeOutBean</string> 
+   <object class="domain.implementation.TimeOutBeaner"/> 
+  </void> 
+  <void method="put"> 
+   <string>domain.state.TriggerImpl</string> 
+   <object class="domain.state.TriggerBeaner"/> 
+  </void> 
+  <void method="put"> 
+   <string>domain.state.TriggerBean</string> 
+   <object class="domain.state.TriggerBeaner"/> 
+  </void> 
+  <void method="put"> 
+   <string>domain.state.State</string> 
+   <object class="domain.state.StateBeaner"/> 
+  </void> 
+  <void method="put"> 
+   <string>domain.state.StateHandlerImpl</string> 
+   <object class="domain.state.StateHandlerBeaner"/> 
+  </void> 
+  <void method="put"> 
+   <string>domain.state.StateHandlerBean</string> 
+   <object class="domain.state.StateHandlerBeaner"/> 
+  </void> 
+  <void method="put"> 
+   <string>presentation.screen.Screen</string> 
+   <object class="presentation.screen.ScreenBeaner"/> 
+  </void> 
+  <void method="put"> 
+   <string>presentation.screen.ScreenBean</string> 
+   <object class="presentation.screen.ScreenBeaner"/> 
+  </void> 
+  <void method="put"> 
+   <string>domain.implementation.Reset</string> 
+   <object class="infrastructure.dataaccess.broker.NullBeaner"/> 
+  </void> 
+  <void method="put"> 
+   <string>domain.implementation.Stop</string> 
+   <object class="infrastructure.dataaccess.broker.NullBeaner"/> 
+  </void> 
+  <void method="put"> 
+   <string>domain.implementation.CountAction</string> 
+   <object class="infrastructure.dataaccess.broker.NullBeaner"/> 
+  </void> 
+  <void method="put"> 
+   <string>domain.implementation.CountTrigger</string> 
+   <object class="domain.implementation.CountBeaner"/> 
+  </void> 
+  <void method="put"> 
+   <string>domain.implementation.CountBean</string> 
+   <object class="domain.implementation.CountBeaner"/> 
+  </void> 
+ </object> 
+</java> 

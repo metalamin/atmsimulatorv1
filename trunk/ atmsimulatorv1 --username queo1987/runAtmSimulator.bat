@@ -1,0 +1,1 @@
+java -cp lib/ifx-framework-1.2-1.jar;lib/jdom.jar;lib/jgraph.jar;lib/junit.jar;lib/jxfsclient2.1.3.jar;lib/jxfsserver2.1.3.jar;lib/jxfssupport2.1.3.jar;lib/poolman.jar;lib/xercesImpl.jar;dist/AtmSimulator.jar config.Main cfg/demo/client/DemoClientStateMachine.xml cfg/config.xml cfg/configurators.xml

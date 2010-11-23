@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Maquina_de_Estados" default="default" basedir=".">
+    <description>Builds, tests, and runs the project Maquina de Estados.</description>
+
+    <target name="1-run-jxfs-server">
+       <java classname="com.jxfs.forum.tools.serverstart.JxfsServer" fork="true" dir="${basedir}">
+         <arg value="cfg/jxfs/server/server.cfg"/>
+         <classpath>
+           <pathelement location="lib/jxfsserver2.1.3.jar"/>
+           <pathelement location="lib/jxfsclient2.1.3.jar"/>
+           <pathelement path="${java.class.path}"/>
+         </classpath>
+       </java>
+    </target>
+
+    <target name="2-run-server">
+       <java classname="config.Main" fork="true" dir="${basedir}">
+        <classpath>
+            <fileset dir="lib">
+                <include name="**/*.jar"/>
+            </fileset>
+           <pathelement path="build/classes"/>
+         </classpath>
+         <arg line="cfg/demo/server/DemoServerStateMachine.xml cfg/config.xml cfg/configurators_server.xml"/>
+       </java>        
+    </target>
+
+    <target name="3-run-atm-simulator">
+       <java classname="config.Main" fork="true" dir="${basedir}">
+        <classpath>
+            <fileset dir="lib">
+                <include name="**/*.jar"/>
+            </fileset>
+           <pathelement path="build/classes"/>
+         </classpath>
+         <!--arg value="cfg/demo/client/DemoClientStateMachine.xml"/-->
+         <arg line="cfg/demo/client/DemoClientStateMachine.xml cfg/config.xml cfg/configurators.xml"/>
+       </java>        
+    </target>
+    
+    <target name="run-state-editor">
+       <java classname="tools.stateeditor.StateEditor" fork="true" dir="${basedir}">
+        <classpath>
+            <fileset dir="lib">
+                <include name="**/*.jar"/>
+            </fileset>
+           <pathelement path="build/classes"/>
+         </classpath>
+       </java>        
+    </target>
+
+    <target name="run-screen-editor">
+       <java classname="tools.screeneditor.Editor" fork="true" dir="${basedir}">
+        <classpath>
+            <fileset dir="lib">
+                <include name="**/*.jar"/>
+            </fileset>
+            <pathelement path="build/classes"/>
+            <pathelement path="${basedir}"/>
+         </classpath>
+       </java>        
+    </target>
+
+    <!--target name="run-bct">
+       <java classname="com.jxfs.forum.tools.bct.BCT" fork="true" dir="${basedir}">
+        <arg value="-cfg"/>
+        <arg value="cfg/jxfs/server/bct.cfg"/>   
+        <classpath>
+            <fileset dir="lib">
+                <include name="**/*.jar"/>
+            </fileset>
+           <pathelement path="build/classes"/>
+         </classpath>
+       </java>        
+    </target-->        
+    
+    <!--target name="run-jxfs-log-server">
+       <java classname="com.jxfs.forum.tools.serverstart.JxfsLogServer" fork="true" dir="${basedir}">
+         <arg value="cfg/jxfs/server/logserver.cfg"/>
+         <classpath>
+           <pathelement location="lib/jxfsserver2.1.3.jar"/>
+           <pathelement location="lib/jxfsclient2.1.3.jar"/>
+           <pathelement path="${java.class.path}"/>
+         </classpath>
+       </java>        
+    </target-->
+        
+</project>

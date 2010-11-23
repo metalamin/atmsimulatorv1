@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.5.0_04" class="java.beans.XMLDecoder"> 
+ <object class="presentation.screen.ScreenBean"> 
+  <void property="bounds"> 
+   <object class="java.awt.Rectangle"> 
+    <int>0</int> 
+    <int>0</int> 
+    <int>1024</int> 
+    <int>738</int> 
+   </object> 
+  </void> 
+  <void property="components"> 
+   <object class="java.util.Vector"> 
+    <void method="add"> 
+     <object class="presentation.screen.Label"> 
+      <void property="font"> 
+       <object class="javax.swing.plaf.FontUIResource"> 
+        <string>Tahoma</string> 
+        <int>1</int> 
+        <int>14</int> 
+       </object> 
+      </void> 
+      <void property="bounds"> 
+       <object class="java.awt.Rectangle"> 
+        <int>142</int> 
+        <int>303</int> 
+        <int>381</int> 
+        <int>27</int> 
+       </object> 
+      </void> 
+      <void property="name"> 
+       <string>lblFirstLine</string> 
+      </void> 
+      <void property="text"> 
+       <string>Sorry, ATM Simulator is currently out of service</string> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="presentation.screen.Label"> 
+      <void property="font"> 
+       <object class="javax.swing.plaf.FontUIResource"> 
+        <string>Tahoma</string> 
+        <int>1</int> 
+        <int>14</int> 
+       </object> 
+      </void> 
+      <void property="bounds"> 
+       <object class="java.awt.Rectangle"> 
+        <int>142</int> 
+        <int>360</int> 
+        <int>396</int> 
+        <int>26</int> 
+       </object> 
+      </void> 
+      <void property="name"> 
+       <string>lblSecondLine</string> 
+      </void> 
+      <void property="text"> 
+       <string>Please, put it available from the ATM Server</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void property="url"> 
+   <string>cfg/demo/client/screen/resources/BackgroundGeneralError2Lines.htm</string> 
+  </void> 
+ </object> 
+</java> 

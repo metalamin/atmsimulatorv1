@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.5.0_04" class="java.beans.XMLDecoder"> 
+ <object class="presentation.screen.ScreenBean"> 
+  <void property="bounds"> 
+   <object class="java.awt.Rectangle"> 
+    <int>128</int> 
+    <int>84</int> 
+    <int>640</int> 
+    <int>480</int> 
+   </object> 
+  </void> 
+  <void property="components"> 
+   <object class="java.util.Vector"> 
+    <void method="add"> 
+     <object class="presentation.screen.Label"> 
+      <void property="bounds"> 
+       <object class="java.awt.Rectangle"> 
+        <int>185</int> 
+        <int>299</int> 
+        <int>287</int> 
+        <int>30</int> 
+       </object> 
+      </void> 
+      <void property="name"> 
+       <string>lblFirstLine</string> 
+      </void> 
+      <void property="text"> 
+       <string>------------------</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void property="url"> 
+   <string>cfg/demo/client/screen/resources/BackgroundShutdown.htm</string> 
+  </void> 
+ </object> 
+</java> 
