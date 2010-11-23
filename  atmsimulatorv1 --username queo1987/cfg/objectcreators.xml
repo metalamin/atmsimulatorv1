@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.5.0_04" class="java.beans.XMLDecoder"> 
+ <object class="java.util.LinkedHashMap"> 
+  <void method="put"> 
+   <string>Trigger</string> 
+   <object class="java.util.HashMap"> 
+    <void method="put"> 
+     <string>Time Out</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>domain.implementation.TimeOutBean</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="domain.implementation.TimeOutBean"> 
+        <void property="thrower"> 
+         <string>&lt;Thrower&gt;</string> 
+        </void> 
+        <void property="type"> 
+         <string>&lt;Type&gt;</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="put"> 
+     <string>Trigger</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>domain.state.TriggerBean</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="thrower"> 
+         <string>&lt;Thrower&gt;</string> 
+        </void> 
+        <void property="type"> 
+         <string>&lt;Type&gt;</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="put"> 
+     <string>Count</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>domain.implementation.CountBean</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="domain.implementation.CountBean"> 
+        <void property="thrower"> 
+         <string>&lt;Thrower&gt;</string> 
+        </void> 
+        <void property="type"> 
+         <string>&lt;Type&gt;</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="put"> 
+   <string>Action</string> 
+   <object class="java.util.HashMap"> 
+    <void method="put"> 
+     <string>Exit</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>domain.implementation.SystemExit</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="domain.implementation.SystemExit"/> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="put"> 
+     <string>Create message</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>infrastructure.communication.action.CreateMessageAction</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="infrastructure.communication.action.CreateMessageAction"> 
+        <void property="msgId"> 
+         <string>&lt;Message ID&gt;</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="put"> 
+     <string>Open Device</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>infrastructure.devices.controllers.OpenDeviceAction</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="infrastructure.devices.controllers.OpenDeviceAction"> 
+        <void property="deviceName"> 
+         <string>&lt;Device name&gt;</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="put"> 
+     <string>Send message</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>infrastructure.communication.action.SendMessageAction</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="infrastructure.communication.action.SendMessageAction"> 
+        <void property="channelName"> 
+         <string>&lt;Channel Name&gt;</string> 
+        </void> 
+        <void property="msgId"> 
+         <string>&lt;Message ID&gt;</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="put"> 
+     <string>Disconnect</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>infrastructure.communication.action.DisconnectAction</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="infrastructure.communication.action.DisconnectAction"/> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="put"> 
+     <string>Display screen</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>presentation.display.DisplayAction</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="presentation.display.DisplayAction"> 
+        <void property="screen"> 
+         <string>&lt;Screen&gt;</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="put"> 
+     <string>Connect channel</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>infrastructure.communication.action.ConnectChannel</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="infrastructure.communication.action.ConnectChannel"> 
+        <void property="channelName"> 
+         <string>&lt;Channel&gt;</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="put"> 
+     <string>Ptr. Print Doc</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>infrastructure.devices.controllers.ptr.PtrPrintDocAction</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="infrastructure.devices.controllers.ptr.PtrPrintDocAction"> 
+        <void property="data"> 
+         <string>&lt;Data&gt;</string> 
+        </void> 
+        <void property="deviceName"> 
+         <string>&lt;Device name&gt;</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="put"> 
+     <string>Append Text</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>presentation.display.AppendTextAction</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="presentation.display.AppendTextAction"> 
+        <void property="comp"> 
+         <string>&lt;Component&gt;</string> 
+        </void> 
+        <void property="text"> 
+         <string>&lt;Text&gt;</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="put"> 
+     <string>Open Device Manager</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>infrastructure.devices.OpenDeviceManagerAction</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="infrastructure.devices.OpenDeviceManagerAction"/> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="put"> 
+     <string>Connect</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>infrastructure.communication.action.ConnectAction</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="infrastructure.communication.action.ConnectAction"/> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="put"> 
+     <string>Set Elements</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>infrastructure.communication.action.SetElementsAction</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="infrastructure.communication.action.SetElementsAction"> 
+        <void property="msgId"> 
+         <string>&lt;Message ID&gt;</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="put"> 
+     <string>Debug</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>domain.implementation.DebugAction</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="domain.implementation.DebugAction"> 
+        <void property="outputText"> 
+         <string>&lt;Debug&gt;</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="put"> 
+     <string>Get element</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>infrastructure.communication.action.GetElementAction</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="infrastructure.communication.action.GetElementAction"> 
+        <void property="element"> 
+         <string>&lt;Element&gt;</string> 
+        </void> 
+        <void property="key"> 
+         <string>&lt;Key&gt;</string> 
+        </void> 
+        <void property="msgId"> 
+         <string>&lt;Message ID&gt;</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="put"> 
+     <string>Clear message</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>infrastructure.communication.action.ClearMessageAction</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="infrastructure.communication.action.ClearMessageAction"> 
+        <void property="msgId"> 
+         <string>&lt;Message ID&gt;</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="put"> 
+     <string>External command</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>infrastructure.communication.action.ExternalCommandAction</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="infrastructure.communication.action.ExternalCommandAction"> 
+        <void property="key"> 
+         <string>&lt;Key&gt;</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="put"> 
+     <string>Disconnect channel</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>infrastructure.communication.action.DisconnectChannel</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="infrastructure.communication.action.DisconnectChannel"> 
+        <void property="channelName"> 
+         <string>&lt;Channel&gt;</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="put"> 
+     <string>Delay</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>domain.implementation.Delay</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="domain.implementation.Delay"> 
+        <void property="waitTime"> 
+         <long>1</long> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="put"> 
+     <string>Key Map</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>domain.implementation.KeyMapAction</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="domain.implementation.KeyMapAction"> 
+        <void property="sourceKey"> 
+         <string>&lt;Source Key&gt;</string> 
+        </void> 
+        <void property="targetKey"> 
+         <string>&lt;Target key&gt;</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="put"> 
+     <string>MSD Read</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>infrastructure.devices.controllers.msd.MsdReadAction</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="infrastructure.devices.controllers.msd.MsdReadAction"/> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="put"> 
+     <string>Display Device</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>infrastructure.devices.controllers.DisplayDeviceAction</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="infrastructure.devices.controllers.DisplayDeviceAction"> 
+        <void property="guiPosition"> 
+         <int>0</int> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="put"> 
+     <string>Set Element</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>infrastructure.communication.action.SetElementAction</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="infrastructure.communication.action.SetElementAction"> 
+        <void property="defaultValue"> 
+         <string>&lt;Default&gt;</string> 
+        </void> 
+        <void property="element"> 
+         <string>&lt;Element&gt;</string> 
+        </void> 
+        <void property="key"> 
+         <string>&lt;Key&gt;</string> 
+        </void> 
+        <void property="msgId"> 
+         <string>&lt;Message ID&gt;</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="put"> 
+     <string>Set Text</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>presentation.display.SetTextAction</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="presentation.display.SetTextAction"> 
+        <void property="comp"> 
+         <string>&lt;Component&gt;</string> 
+        </void> 
+        <void property="text"> 
+         <string>&lt;Text&gt;</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="put"> 
+     <string>Condition</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>domain.implementation.ConditionalAction</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="domain.implementation.ConditionalAction"> 
+        <void property="key"> 
+         <string>&lt;Key&gt;</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>&lt;Thrower&gt;</string> 
+        </void> 
+        <void property="type"> 
+         <string>&lt;Type&gt;</string> 
+        </void> 
+        <void property="value"> 
+         <string>&lt;Value&gt;</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="put"> 
+     <string>T.I.O. Read</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>infrastructure.devices.controllers.tio.TioReadAction</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="infrastructure.devices.controllers.tio.TioReadAction"> 
+        <void property="pin"> 
+         <string>&lt;Pin&gt;</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="put"> 
+     <string>State Change</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>domain.implementation.StateChange</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="domain.implementation.StateChange"> 
+        <void property="state"> 
+         <string>&lt;State&gt;</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="put"> 
+     <string>Get Text</string> 
+     <object class="util.DefaultCreator"> 
+      <void property="baseClass"> 
+       <string>presentation.display.GetTextAction</string> 
+      </void> 
+      <void property="baseObject"> 
+       <object class="presentation.display.GetTextAction"> 
+        <void property="name"> 
+         <string>&lt;Component&gt;</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+ </object> 
+</java> 

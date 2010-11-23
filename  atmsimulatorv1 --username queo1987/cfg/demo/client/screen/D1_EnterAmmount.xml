@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.5.0_04" class="java.beans.XMLDecoder"> 
+ <object class="presentation.screen.ScreenBean"> 
+  <void property="bounds"> 
+   <object class="java.awt.Rectangle"> 
+    <int>128</int> 
+    <int>84</int> 
+    <int>640</int> 
+    <int>480</int> 
+   </object> 
+  </void> 
+  <void property="components"> 
+   <object class="java.util.Vector"> 
+    <void method="add"> 
+     <object class="presentation.screen.TextBox"> 
+      <void property="font"> 
+       <object class="javax.swing.plaf.FontUIResource"> 
+        <string>Tahoma</string> 
+        <int>0</int> 
+        <int>14</int> 
+       </object> 
+      </void> 
+      <void property="bounds"> 
+       <object class="java.awt.Rectangle"> 
+        <int>253</int> 
+        <int>197</int> 
+        <int>120</int> 
+        <int>27</int> 
+       </object> 
+      </void> 
+      <void property="name"> 
+       <string>txtAmmount</string> 
+      </void> 
+      <void property="text"> 
+       <string>0</string> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="presentation.screen.Label"> 
+      <void property="font"> 
+       <object class="javax.swing.plaf.FontUIResource"> 
+        <string>Tahoma</string> 
+        <int>1</int> 
+        <int>16</int> 
+       </object> 
+      </void> 
+      <void property="bounds"> 
+       <object class="java.awt.Rectangle"> 
+        <int>170</int> 
+        <int>24</int> 
+        <int>312</int> 
+        <int>42</int> 
+       </object> 
+      </void> 
+      <void property="name"> 
+       <string>lblTitle</string> 
+      </void> 
+      <void property="text"> 
+       <string>Enter an ammount for the operation</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void property="url"> 
+   <string>cfg/demo/client/screen/resources/Background1ComponentCenter.htm</string> 
+  </void> 
+ </object> 
+</java> 

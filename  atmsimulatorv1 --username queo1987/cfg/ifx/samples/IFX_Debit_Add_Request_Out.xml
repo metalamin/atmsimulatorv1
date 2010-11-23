@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IFX xmlns="http://sourceforge.net/ifx-framework/ifx"><BankSvcRq><DebitAddRq><DebitInfo><DebitAuthType>Deposit</DebitAuthType><CompositeCurAmt><CurAmt><Amt>250.0</Amt></CurAmt></CompositeCurAmt></DebitInfo></DebitAddRq></BankSvcRq><BankSvcRq><DebitAddRq><DebitInfo><CompositeCurAmt /><CompositeCurAmt><CurAmt><Amt>250.0</Amt></CurAmt></CompositeCurAmt></DebitInfo></DebitAddRq></BankSvcRq></IFX>

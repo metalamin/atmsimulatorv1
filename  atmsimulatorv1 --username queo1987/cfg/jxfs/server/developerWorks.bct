@@ -1,0 +1,65 @@
+S DEVVAL developerWorks Alarm serviceName com.jxfs.samples.alarm.ALMService
+S DEVVAL developerWorks Alarm controlName com.jxfs.control.alm.JxfsAlarm
+S DEVVAL developerWorks Alarm description "Fort Knox central alarm"
+S DEVVAL developerWorks Alarm clientCommName com.jxfs.forum.communication.rmi.AlarmClientCommRMI
+S DEVVAL developerWorks Alarm serverCommName com.jxfs.forum.communication.rmi.AlarmCommRMI
+S DEVVAL developerWorks Alarm communicationInfo 2424,localhost
+S DEVVAL developerWorks Alarm deviceName AlarmDevice
+S DEVVAL developerWorks Alarm remoteAccess (boolean)true
+S DEVVAL developerWorks MSD serviceName com.jxfs.samples.msd.MSDService
+S DEVVAL developerWorks MSD controlName com.jxfs.control.msd.JxfsMagStripe
+S DEVVAL developerWorks MSD deviceName MagStripe
+S DEVVAL developerWorks MSD description "Simple MagStripe on Rudi Tester's Machine"
+S DEVVAL developerWorks MSD remoteAccess (boolean)false
+S DEVVAL developerWorks MSD2 serviceName com.jxfs.samples.msd.MSDMotorService
+S DEVVAL developerWorks MSD2 controlName com.jxfs.control.msd.JxfsMagStripe
+S DEVVAL developerWorks MSD2 clientCommName com.jxfs.forum.communication.rmi.MagStripeClientCommRMI
+S DEVVAL developerWorks MSD2 serverCommName com.jxfs.forum.communication.rmi.MagStripeCommRMI
+S DEVVAL developerWorks MSD2 communicationInfo 2424,localhost
+S DEVVAL developerWorks MSD2 physConnectedTo MyPersonalInterfaceCard,1200,8,N,2
+S DEVVAL developerWorks MSD2 deviceName MotorMagStripe
+S DEVVAL developerWorks MSD2 description "The better Magstripe with Motor"
+S DEVVAL developerWorks MSD2 remoteAccess (boolean)true
+S DEVVAL developerWorks ComplexMSD serviceName com.jxfs.samples.complex.MSD_CCDService
+S DEVVAL developerWorks ComplexMSD controlName com.jxfs.control.msd.JxfsMagStripe
+S DEVVAL developerWorks ComplexMSD clientCommName com.jxfs.forum.communication.rmi.MagStripeClientCommRMI
+S DEVVAL developerWorks ComplexMSD serverCommName com.jxfs.forum.communication.rmi.MagStripeCommRMI
+S DEVVAL developerWorks ComplexMSD communicationInfo 2424,localhost
+S DEVVAL developerWorks ComplexMSD deviceName ComplexMagStripe
+S DEVVAL developerWorks ComplexMSD description "Combined MagStripe & ChipCard Device"
+S DEVVAL developerWorks ComplexMSD remoteAccess (boolean)true
+S DEVVAL developerWorks ComplexCCD serviceName com.jxfs.samples.complex.MSD_CCDService
+S DEVVAL developerWorks ComplexCCD controlName com.jxfs.control.msd.JxfsChipCard
+S DEVVAL developerWorks ComplexCCD clientCommName com.jxfs.forum.communication.rmi.ChipCardClientCommRMI
+S DEVVAL developerWorks ComplexCCD serverCommName com.jxfs.forum.communication.rmi.ChipCardCommRMI
+S DEVVAL developerWorks ComplexCCD communicationInfo 2424,localhost
+S DEVVAL developerWorks ComplexCCD deviceName ComplexChipCard
+S DEVVAL developerWorks ComplexCCD description "Combined ChipCard & MagStripe Device"
+S DEVVAL developerWorks ComplexCCD remoteAccess (boolean)true
+S DEVVAL developerWorks TIO serviceName com.jxfs.samples.tio.TIOService
+S DEVVAL developerWorks TIO controlName com.jxfs.control.tio.JxfsTIO
+S DEVVAL developerWorks TIO deviceName TextInOut
+S DEVVAL developerWorks TIO remoteAccess (boolean)false
+S DEVVAL developerWorks TIO description "Text Input/Output"
+S DEVVAL developerWorks PIN serviceName com.jxfs.samples.pin.PINService
+S DEVVAL developerWorks PIN controlName com.jxfs.control.pin.JxfsPINKeypad
+S DEVVAL developerWorks PIN deviceName Pinpad
+S DEVVAL developerWorks PIN remoteAccess (boolean)false
+S DEVVAL developerWorks PIN description "PIN keypad"
+S DEVVAL developerWorks CDR serviceName com.jxfs.samples.cdr.CDRService
+S DEVVAL developerWorks CDR controlName com.jxfs.control.cdr.JxfsCashDispenser
+S DEVVAL developerWorks CDR deviceName CashDispenser
+S DEVVAL developerWorks CDR remoteAccess (boolean)false
+S DEVVAL developerWorks CDR description "Cash dispenser"
+S DEVVAL developerWorks PTR serviceName com.jxfs.samples.ptr.PTRService
+S DEVVAL developerWorks PTR controlName com.jxfs.control.ptr.JxfsDocumentPrinter
+S DEVVAL developerWorks PTR deviceName DocuPrinter
+S DEVVAL developerWorks PTR remoteAccess (boolean)false
+S DEVVAL developerWorks PTR description "Document printer"
+S APPLVAL developerWorks jxfsClient devices Alarm,MSD,TIO,PIN,PTR
+S APPLVAL developerWorks jxfsClient defaults MagStripe(com.jxfs.control.msd.JxfsMagStripe)
+S APPLVAL developerWorks jxfsClient imagepath images
+S APPLVAL developerWorks jxfsClient almguipos_x (int)50
+S APPLVAL developerWorks jxfsClient almguipos_y (int)50
+S APPLVAL developerWorks jxfsClient almguisize_x (int)200
+S APPLVAL developerWorks jxfsClient almguisize_y (int)200

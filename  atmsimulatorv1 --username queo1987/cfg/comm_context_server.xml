@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.5.0_04" class="java.beans.XMLDecoder"> 
+ <object class="java.util.LinkedHashMap"> 
+  <void method="put"> 
+   <string>COMMFACTORY</string> 
+   <object class="infrastructure.services.comm.channel.tcp.TCPCommFactory"/> 
+  </void> 
+  <void method="put"> 
+   <string>CONTEXT</string> 
+   <object class="java.util.HashMap"> 
+    <void method="put"> 
+     <string>Infos</string> 
+     <object class="java.util.Vector"> 
+      <void method="add"> 
+       <object class="infrastructure.services.comm.channel.tcp.TCPClientInfo"> 
+        <void property="host"> 
+         <string>localhost</string> 
+        </void> 
+        <void property="name"> 
+         <string>HOST_COMMAND_CHANNEL</string> 
+        </void> 
+        <void property="port"> 
+         <int>8090</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="infrastructure.services.comm.channel.tcp.TCPServerInfo"> 
+        <void property="name"> 
+         <string>ATM_REQUEST_CHANNEL</string> 
+        </void> 
+        <void property="port"> 
+         <int>8070</int> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="put"> 
+   <string>MESSAGEFACTORY</string> 
+   <object class="infrastructure.services.comm.message.ifx.IFXMessageFactory"/> 
+  </void> 
+ </object> 
+</java> 

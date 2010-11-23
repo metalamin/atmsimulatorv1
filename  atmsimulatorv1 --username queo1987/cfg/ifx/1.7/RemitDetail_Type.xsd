@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://www.ifxforum.org/RemitDetailInfo/2004/07" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.ifxforum.org/RemitDetailInfo/2004/07" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <!-- RemitDetail_Type -->
+    <xsd:element name="RemitDetail" type="RemitDetail_Type"/>
+    <xsd:complexType name="RemitDetail_Type">
+        <xsd:sequence>
+            <xsd:element ref="InvoiceReceiver" minOccurs="0"/>
+            <xsd:element ref="InvoiceSender" minOccurs="0"/>
+            <xsd:element ref="CurAmt" minOccurs="0"/>
+            <xsd:element ref="PmtSummAmt" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element ref="RefInfo" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element ref="BillRefInfo" minOccurs="0"/>
+            <xsd:element ref="BillId" minOccurs="0"/>
+            <xsd:element ref="Memo" minOccurs="0"/>
+            <xsd:element ref="BillingAcct" minOccurs="0"/>
+            <xsd:element ref="InvoiceInfo" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="PmtRemitRefId" type="Identifier"/>
+    <xsd:element name="CurAmt" type="CurAmt_Type"/>
+    <xsd:element name="PmtRemitStatus" type="PmtRemitStatus_Type"/>
+    <xsd:element name="InvoiceReceiver" type="InvoiceReceiver_Type"/>
+    <xsd:element name="InvoiceSender" type="InvoiceSender_Type"/>
+    <xsd:element name="PmtSummAmt" type="PmtSummAmt_Type"/>
+    <xsd:element name="RefInfo" type="RefInfo_Type"/>
+    <xsd:element name="BillRefInfo" type="BillRefInfo_Type"/>
+    <xsd:element name="BillId" type="BillId_Type"/>
+    <xsd:element name="Memo" type="Memo_Type"/>
+    <xsd:element name="BillingAcct" type="BillingAcct_Type"/>
+    <xsd:element name="InvoiceInfo" type="InvoiceInfo_Type"/>
+    <xsd:element name="PmtRemitStatusCode" type="PmtRemitStatusCode_Type"/>
+    <xsd:element name="StatusDesc" type="StatusDesc_Type"/>
+    <xsd:element name="EffDt" type="EffDt_Type"/>
+    <xsd:element name="StatusModBy" type="StatusModBy_Type"/>
+    <xsd:element name="OrgId" type="OrgId_Type"/>
+    <xsd:element name="OrgInfo" type="OrgInfo_Type"/>
+    <xsd:element name="PostAddr" type="PostAddr_Type"/>
+    <xsd:element name="AcctPayAcct" type="AcctPayAcct_Type"/>
+    <xsd:element name="BillSummAmtId" type="BillSummAmtId_Type"/>
+    <xsd:element name="RefType" type="RefType_Type"/>
+    <xsd:element name="RefId" type="RefId_Type"/>
+    <xsd:element name="InvoiceType" type="InvoiceType_Type"/>
+    <xsd:element name="InvoiceNum" type="InvoiceNum_Type"/>
+    <xsd:element name="TotalCurAmt" type="TotalCurAmt_Type"/>
+    <xsd:element name="PaidCurAmt" type="PaidCurAmt_Type"/>
+    <xsd:element name="Desc" type="Desc_Type"/>
+    <xsd:element name="InvoiceVouchNum" type="InvoiceVouchNum_Type"/>
+    <xsd:element name="Fee" type="Fee_Type"/>
+    <xsd:element name="InvoicePremium" type="InvoicePremium_Type"/>
+    <xsd:element name="Discount" type="Discount_Type"/>
+    <xsd:element name="TaxInfo" type="TaxInfo_Type"/>
+    <xsd:element name="InvoiceAdj" type="InvoiceAdj_Type"/>
+    <xsd:element name="InvoiceLineItem" type="InvoiceLineItem_Type"/>
+    <xsd:element name="Amt" type="Amt_Type"/>
+    <xsd:element name="CurCode" type="CurCode_Type"/>
+    <xsd:element name="CurRate" type="CurRate_Type"/>
+    <xsd:element name="CurConvertRule" type="CurConvertRule_Type"/>
+    <xsd:element name="OrgIdType" type="OrgIdType_Type"/>
+    <xsd:element name="OrgIdNum" type="OrgIdNum_Type"/>
+    <xsd:element name="IndustId" type="IndustId_Type"/>
+    <xsd:element name="Name" type="Name_Type"/>
+    <xsd:element name="LegalName" type="LegalName_Type"/>
+    <xsd:element name="CompositeContactInfo" type="CompositeContactInfo_Type"/>
+    <xsd:element name="TINInfo" type="TINInfo_Type"/>
+    <xsd:element name="EstablishDt" type="EstablishDt_Type"/>
+    <xsd:element name="NumEmployees" type="NumEmployees_Type"/>
+    <xsd:element name="FeeType" type="FeeType_Type"/>
+    <xsd:element name="Rate" type="Rate_Type"/>
+    <xsd:element name="MinCurAmt" type="MinCurAmt_Type"/>
+    <xsd:element name="MaxCurAmt" type="MaxCurAmt_Type"/>
+    <xsd:element name="Org" type="Org_Type"/>
+    <xsd:element name="TaxType" type="TaxType_Type"/>
+    <xsd:element name="InvoiceAdjNum" type="InvoiceAdjNum_Type"/>
+    <xsd:element name="AdjType" type="AdjType_Type"/>
+    <xsd:element name="InvoiceLineItemNum" type="InvoiceLineItemNum_Type"/>
+    <xsd:element name="Addr1" type="Addr1_Type"/>
+    <xsd:element name="Addr2" type="Addr2_Type"/>
+    <xsd:element name="Addr3" type="Addr3_Type"/>
+    <xsd:element name="Addr4" type="Addr4_Type"/>
+    <xsd:element name="City" type="City_Type"/>
+    <xsd:element name="StateProv" type="StateProv_Type"/>
+    <xsd:element name="PostalCode" type="PostalCode_Type"/>
+    <xsd:element name="Country" type="Country_Type"/>
+    <xsd:element name="AddrType" type="AddrType_Type"/>
+    <xsd:element name="StartDt" type="StartDt_Type"/>
+    <xsd:element name="EndDt" type="EndDt_Type"/>
+    <xsd:element name="IndustNum" type="IndustNum_Type"/>
+    <xsd:element name="ContactInfoType" type="ContactInfoType_Type"/>
+    <xsd:element name="ContactInfo" type="ContactInfo_Type"/>
+    <xsd:element name="TINType" type="TINType_Type"/>
+    <xsd:element name="TaxId" type="TaxId_Type"/>
+    <xsd:element name="CertCode" type="CertCode_Type"/>
+    <xsd:element name="ContactPref" type="ContactPref_Type"/>
+    <xsd:element name="PrefTimeStart" type="PrefTimeStart_Type"/>
+    <xsd:element name="PrefTimeEnd" type="PrefTimeEnd_Type"/>
+    <xsd:element name="PhoneNum" type="PhoneNum_Type"/>
+    <xsd:element name="ContactName" type="ContactName_Type"/>
+    <xsd:element name="EmailAddr" type="EmailAddr_Type"/>
+    <xsd:element name="URL" type="URL_Type"/>
+    <xsd:element name="PhoneType" type="PhoneType_Type"/>
+    <xsd:element name="Phone" type="Phone_Type"/>
+    <xsd:complexType name="PmtRemitDetail_Type">
+        <xsd:sequence>
+            <xsd:element ref="PmtRemitRefId"/>
+            <xsd:element ref="CurAmt"/>
+            <xsd:element ref="PmtRemitStatus" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="CurAmt_Type">
+        <xsd:complexContent>
+            <xsd:extension base="CurrencyAmount"/>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="PmtRemitStatus_Type">
+        <xsd:sequence>
+            <xsd:element ref="PmtRemitStatusCode"/>
+            <xsd:element ref="StatusDesc" minOccurs="0"/>
+            <xsd:element ref="EffDt"/>
+            <xsd:element ref="StatusModBy" minOccurs="0"/>
+            <xsd:element ref="Memo" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="InvoiceReceiver_Type">
+        <xsd:sequence>
+            <xsd:element ref="OrgId"/>
+            <xsd:element ref="OrgInfo" minOccurs="0"/>
+            <xsd:element ref="PostAddr" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="InvoiceSender_Type">
+        <xsd:sequence>
+            <xsd:element ref="OrgId"/>
+            <xsd:element ref="OrgInfo" minOccurs="0"/>
+            <xsd:element ref="PostAddr" minOccurs="0"/>
+            <xsd:element ref="AcctPayAcct" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="PmtSummAmt_Type">
+        <xsd:sequence>
+            <xsd:element ref="BillSummAmtId"/>
+            <xsd:element ref="CurAmt"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="RefInfo_Type">
+        <xsd:sequence>
+            <xsd:element ref="RefType"/>
+            <xsd:element ref="RefId"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="InvoiceInfo_Type">
+        <xsd:sequence>
+            <xsd:element ref="InvoiceType" minOccurs="0"/>
+            <xsd:element ref="InvoiceNum"/>
+            <xsd:element ref="RefInfo" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element ref="TotalCurAmt"/>
+            <xsd:element ref="PaidCurAmt" minOccurs="0"/>
+            <xsd:element ref="EffDt"/>
+            <xsd:element ref="Desc" minOccurs="0"/>
+            <xsd:element ref="InvoiceVouchNum" minOccurs="0"/>
+            <xsd:element ref="Fee" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element ref="InvoicePremium" minOccurs="0"/>
+            <xsd:element ref="Discount" minOccurs="0"/>
+            <xsd:element ref="TaxInfo" minOccurs="0"/>
+            <xsd:element ref="InvoiceAdj" minOccurs="0"/>
+            <xsd:element ref="InvoiceLineItem" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="CurrencyAmount">
+        <xsd:sequence>
+            <xsd:element ref="Amt"/>
+            <xsd:element ref="CurCode" minOccurs="0"/>
+            <xsd:sequence minOccurs="0">
+                <xsd:element ref="CurRate"/>
+                <xsd:element ref="CurConvertRule"/>
+            </xsd:sequence>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="OrgId_Type">
+        <xsd:sequence>
+            <xsd:element ref="OrgIdType"/>
+            <xsd:element ref="OrgIdNum"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="OrgInfo_Type">
+        <xsd:sequence>
+            <xsd:element ref="IndustId" minOccurs="0"/>
+            <xsd:element ref="Name" minOccurs="0"/>
+            <xsd:element ref="LegalName" minOccurs="0"/>
+            <xsd:element ref="CompositeContactInfo" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element ref="TINInfo" minOccurs="0"/>
+            <xsd:element ref="EstablishDt" minOccurs="0"/>
+            <xsd:element ref="NumEmployees" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="TotalCurAmt_Type">
+        <xsd:complexContent>
+            <xsd:extension base="CurrencyAmount"/>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="PaidCurAmt_Type">
+        <xsd:complexContent>
+            <xsd:extension base="CurrencyAmount"/>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="Fee_Type">
+        <xsd:sequence>
+            <xsd:element ref="FeeType"/>
+            <xsd:element ref="CurAmt" minOccurs="0"/>
+            <xsd:element ref="Rate" minOccurs="0"/>
+            <xsd:element ref="MinCurAmt" minOccurs="0"/>
+            <xsd:element ref="MaxCurAmt" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="InvoicePremium_Type">
+        <xsd:complexContent>
+            <xsd:extension base="CurrencyAmount"/>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="Discount_Type">
+        <xsd:sequence>
+            <xsd:choice>
+                <xsd:element ref="Rate"/>
+                <xsd:element ref="CurAmt"/>
+            </xsd:choice>
+            <xsd:element ref="EffDt" minOccurs="0"/>
+            <xsd:element ref="Desc" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="TaxInfo_Type">
+        <xsd:sequence>
+            <xsd:element ref="Org"/>
+            <xsd:element ref="TaxType"/>
+            <xsd:element ref="CurAmt" minOccurs="0"/>
+            <xsd:element ref="Rate" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="InvoiceAdj_Type">
+        <xsd:sequence>
+            <xsd:element ref="InvoiceAdjNum" minOccurs="0"/>
+            <xsd:element ref="AdjType" minOccurs="0"/>
+            <xsd:element ref="CurAmt"/>
+            <xsd:element ref="EffDt" minOccurs="0"/>
+            <xsd:element ref="Desc" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="InvoiceLineItem_Type">
+        <xsd:sequence>
+            <xsd:element ref="InvoiceLineItemNum"/>
+            <xsd:element ref="AdjType" minOccurs="0"/>
+            <xsd:element ref="CurAmt"/>
+            <xsd:element ref="Desc" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="PostAddr_Type">
+        <xsd:sequence>
+            <xsd:sequence>
+                <xsd:element ref="Addr1"/>
+                <xsd:sequence minOccurs="0">
+                    <xsd:element ref="Addr2"/>
+                    <xsd:sequence minOccurs="0">
+                        <xsd:element ref="Addr3"/>
+                        <xsd:sequence minOccurs="0">
+                            <xsd:element ref="Addr4"/>
+                        </xsd:sequence>
+                    </xsd:sequence>
+                </xsd:sequence>
+            </xsd:sequence>
+            <xsd:element ref="City" minOccurs="0"/>
+            <xsd:element ref="StateProv" minOccurs="0"/>
+            <xsd:element ref="PostalCode" minOccurs="0"/>
+            <xsd:element ref="Country"/>
+            <xsd:element ref="AddrType" minOccurs="0"/>
+            <xsd:element ref="StartDt" minOccurs="0"/>
+            <xsd:element ref="EndDt" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="IndustId_Type">
+        <xsd:sequence>
+            <xsd:element ref="Org"/>
+            <xsd:element ref="IndustNum"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="CompositeContactInfo_Type">
+        <xsd:sequence>
+            <xsd:element ref="ContactInfoType"/>
+            <xsd:element ref="ContactInfo"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="TINInfo_Type">
+        <xsd:sequence>
+            <xsd:element ref="TINType" minOccurs="0"/>
+            <xsd:element ref="TaxId"/>
+            <xsd:element ref="CertCode" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="MinCurAmt_Type">
+        <xsd:complexContent>
+            <xsd:extension base="CurrencyAmount"/>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="MaxCurAmt_Type">
+        <xsd:complexContent>
+            <xsd:extension base="CurrencyAmount"/>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="ContactInfo_Type">
+        <xsd:sequence>
+            <xsd:element ref="ContactPref" minOccurs="0"/>
+            <xsd:element ref="PrefTimeStart" minOccurs="0"/>
+            <xsd:element ref="PrefTimeEnd" minOccurs="0"/>
+            <xsd:element ref="PhoneNum" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element ref="ContactName" minOccurs="0"/>
+            <xsd:element ref="EmailAddr" minOccurs="0"/>
+            <xsd:element ref="URL" minOccurs="0"/>
+            <xsd:element ref="PostAddr" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="PhoneNum_Type">
+        <xsd:sequence>
+            <xsd:element ref="PhoneType"/>
+            <xsd:element ref="Phone"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:simpleType name="BillRefInfo_Type">
+        <xsd:restriction base="NC">
+            <xsd:maxLength value="80"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="BillId_Type">
+        <xsd:restriction base="UUID"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="Memo_Type">
+        <xsd:restriction base="C">
+            <xsd:maxLength value="255"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="BillingAcct_Type">
+        <xsd:restriction base="C">
+            <xsd:maxLength value="32"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="NC">
+        <xsd:annotation>
+            <xsd:documentation>Elements of type Narrow Character are elements of character data type with the additional restriction that the only allowable characters are those contained within the ISO Latin-1 character set.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="UUID">
+        <xsd:annotation>
+            <xsd:documentation>UUID elements are Narrow Character with a maximum length of 36.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="NC">
+            <xsd:maxLength value="36"/>
+            <xsd:pattern value="([0-9]|[a-f]|[A-F]){8}(-([0-9]|[a-f]|[A-F]){4})(-([0-9]|[a-f]|[A-F]){4})(-([0-9]|[a-f]|[A-F]){4})(-([0-9]|[a-f]|[A-F]){12})"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="C">
+        <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="PmtRemitStatusCode_Type">
+        <xsd:restriction base="OpenEnum"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="StatusDesc_Type">
+        <xsd:restriction base="C">
+            <xsd:maxLength value="255"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="EffDt_Type">
+        <xsd:restriction base="DateTime"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="StatusModBy_Type">
+        <xsd:restriction base="OpenEnum"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="AcctPayAcct_Type">
+        <xsd:restriction base="Identifier"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="BillSummAmtId_Type">
+        <xsd:restriction base="Identifier"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="RefType_Type">
+        <xsd:restriction base="OpenEnum"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="RefId_Type">
+        <xsd:restriction base="Identifier"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="InvoiceType_Type">
+        <xsd:restriction base="OpenEnum"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="InvoiceNum_Type">
+        <xsd:restriction base="C">
+            <xsd:maxLength value="32"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="Desc_Type">
+        <xsd:restriction base="C">
+            <xsd:maxLength value="80"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="InvoiceVouchNum_Type">
+        <xsd:restriction base="C">
+            <xsd:maxLength value="80"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="Amt_Type">
+        <xsd:restriction base="Decimal"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="CurCode_Type">
+        <xsd:restriction base="NC">
+            <xsd:maxLength value="3"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="CurRate_Type">
+        <xsd:restriction base="Decimal"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="CurConvertRule_Type">
+        <xsd:restriction base="ClosedEnum"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="OpenEnum">
+        <xsd:restriction base="C">
+            <xsd:maxLength value="80"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="DateTime">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[0-9]{4}-[0-9]{2}-[0-9]{2}(T[0-9]{2}:[0-9]{2}(:[0-9]{2}(\.[0-9]{6})?((-|\+)[0-9]{2}:[0-9]{2})?)?)?"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="Identifier">
+        <xsd:annotation>
+            <xsd:documentation>Object identifiers in the IFX Specification are of the data type "Identifier."  This is a Narrow Character data type with a maximum length of 36.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="NC">
+            <xsd:maxLength value="36"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="Decimal">
+        <xsd:annotation>
+            <xsd:documentation>Decimal indicates a numeric value that meets the following rules:</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:decimal"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="ClosedEnum">
+        <xsd:restriction base="C">
+            <xsd:maxLength value="80"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="OrgIdType_Type">
+        <xsd:restriction base="OpenEnum"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="OrgIdNum_Type">
+        <xsd:restriction base="Identifier"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="Name_Type">
+        <xsd:restriction base="C">
+            <xsd:maxLength value="40"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="LegalName_Type">
+        <xsd:restriction base="C">
+            <xsd:maxLength value="96"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="EstablishDt_Type">
+        <xsd:restriction base="Date"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="NumEmployees_Type">
+        <xsd:restriction base="Long"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="FeeType_Type">
+        <xsd:restriction base="OpenEnum"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="Rate_Type">
+        <xsd:restriction base="Decimal"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="Org_Type">
+        <xsd:restriction base="Identifier"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="TaxType_Type">
+        <xsd:restriction base="OpenEnum"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="InvoiceAdjNum_Type">
+        <xsd:restriction base="C">
+            <xsd:maxLength value="32"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="AdjType_Type">
+        <xsd:restriction base="OpenEnum"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="InvoiceLineItemNum_Type">
+        <xsd:restriction base="C">
+            <xsd:maxLength value="12"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="Date">
+        <xsd:restriction base="xsd:date"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="Long">
+        <xsd:annotation>
+            <xsd:documentation>Long is an integer value, which may be positive, negative, or zero, with values ranging from -2147483648 to 2147483647.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:long"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="Addr1_Type">
+        <xsd:restriction base="C">
+            <xsd:maxLength value="64"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="Addr2_Type">
+        <xsd:restriction base="C">
+            <xsd:maxLength value="64"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="Addr3_Type">
+        <xsd:restriction base="C">
+            <xsd:maxLength value="64"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="Addr4_Type">
+        <xsd:restriction base="C">
+            <xsd:maxLength value="64"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="City_Type">
+        <xsd:restriction base="C">
+            <xsd:maxLength value="32"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="StateProv_Type">
+        <xsd:restriction base="C">
+            <xsd:maxLength value="32"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="PostalCode_Type">
+        <xsd:restriction base="C">
+            <xsd:maxLength value="11"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="Country_Type">
+        <xsd:restriction base="NC">
+            <xsd:maxLength value="3"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="AddrType_Type">
+        <xsd:restriction base="OpenEnum"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="StartDt_Type">
+        <xsd:restriction base="DateTime"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="EndDt_Type">
+        <xsd:restriction base="DateTime"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="IndustNum_Type">
+        <xsd:restriction base="NC"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="ContactInfoType_Type">
+        <xsd:restriction base="OpenEnum"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="TINType_Type">
+        <xsd:restriction base="OpenEnum"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="TaxId_Type">
+        <xsd:restriction base="NC">
+            <xsd:maxLength value="12"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="CertCode_Type">
+        <xsd:restriction base="OpenEnum"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="ContactPref_Type">
+        <xsd:restriction base="OpenEnum"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="PrefTimeStart_Type">
+        <xsd:restriction base="Time"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="PrefTimeEnd_Type">
+        <xsd:restriction base="Time"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="ContactName_Type">
+        <xsd:restriction base="C">
+            <xsd:maxLength value="40"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="EmailAddr_Type">
+        <xsd:restriction base="NC">
+            <xsd:maxLength value="128"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <!--:NOTE: remove this, cyclic dependency-->
+    <xsd:simpleType name="URL_Type">
+        <xsd:restriction base="URL"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="URL">
+        <xsd:restriction base="NC">
+            <xsd:maxLength value="1024"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="Time">
+        <xsd:restriction base="xsd:time"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="PhoneType_Type">
+        <xsd:restriction base="OpenEnum"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="Phone_Type">
+        <xsd:restriction base="PhoneNumber"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="PhoneNumber">
+        <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+</xsd:schema>

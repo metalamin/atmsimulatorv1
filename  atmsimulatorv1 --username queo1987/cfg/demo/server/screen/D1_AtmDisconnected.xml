@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.5.0_04" class="java.beans.XMLDecoder"> 
+ <object class="presentation.screen.ScreenBean"> 
+  <void property="bounds"> 
+   <object class="java.awt.Rectangle"> 
+    <int>120</int> 
+    <int>75</int> 
+    <int>640</int> 
+    <int>480</int> 
+   </object> 
+  </void> 
+  <void property="components"> 
+   <object class="java.util.Vector"> 
+    <void method="add"> 
+     <object class="presentation.screen.Button"> 
+      <void property="bounds"> 
+       <object class="java.awt.Rectangle"> 
+        <int>267</int> 
+        <int>238</int> 
+        <int>115</int> 
+        <int>35</int> 
+       </object> 
+      </void> 
+      <void property="actionCommand"> 
+       <string>Exit server</string> 
+      </void> 
+      <void property="label"> 
+       <string>Exit server</string> 
+      </void> 
+      <void property="model"> 
+       <void property="actionCommand"> 
+        <null/> 
+       </void> 
+      </void> 
+      <void property="name"> 
+       <string>btnExit</string> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="presentation.screen.Label"> 
+      <void property="font"> 
+       <object class="javax.swing.plaf.FontUIResource"> 
+        <string>Tahoma</string> 
+        <int>1</int> 
+        <int>14</int> 
+       </object> 
+      </void> 
+      <void property="bounds"> 
+       <object class="java.awt.Rectangle"> 
+        <int>177</int> 
+        <int>148</int> 
+        <int>313</int> 
+        <int>32</int> 
+       </object> 
+      </void> 
+      <void property="name"> 
+       <string>lblText</string> 
+      </void> 
+      <void property="text"> 
+       <string>NO ATM IS CONNECTED AT THIS MOMENT</string> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="presentation.screen.Label"> 
+      <void property="font"> 
+       <object class="javax.swing.plaf.FontUIResource"> 
+        <string>Tahoma</string> 
+        <int>1</int> 
+        <int>14</int> 
+       </object> 
+      </void> 
+      <void property="bounds"> 
+       <object class="java.awt.Rectangle"> 
+        <int>198</int> 
+        <int>28</int> 
+        <int>360</int> 
+        <int>35</int> 
+       </object> 
+      </void> 
+      <void property="name"> 
+       <string>lblTitle</string> 
+      </void> 
+      <void property="text"> 
+       <string>Welcome to ATM Simulator Server</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void property="url"> 
+   <string>cfg/demo/server/screen/resources/BackgroundAtmDisconnected.htm</string> 
+  </void> 
+ </object> 
+</java> 

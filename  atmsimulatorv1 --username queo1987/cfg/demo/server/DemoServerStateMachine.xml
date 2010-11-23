@@ -1,0 +1,1114 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.5.0_04" class="java.beans.XMLDecoder"> 
+ <object class="domain.state.StateHandlerBean"> 
+  <void property="states"> 
+   <void method="add"> 
+    <object class="domain.state.StateBean"> 
+     <void property="name"> 
+      <string>WITHDRAWAL_STATE</string> 
+     </void> 
+     <void property="startupTrigger"> 
+      <void property="actions"> 
+       <void method="add"> 
+        <object class="presentation.display.DisplayAloneAction"> 
+         <void property="screen"> 
+          <string>cfg/demo/server/screen/D1_Withdrawal.xml</string> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="infrastructure.communication.action.GetElementAction"> 
+         <void property="key"> 
+          <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CardAcctId[0].CardMagData.MagData2</string> 
+         </void> 
+         <void property="msgId"> 
+          <string>MESSAGE.IN</string> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="infrastructure.communication.action.GetElementAction"> 
+         <void property="key"> 
+          <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CompositeCurAmt[0].CurAmt.Amt</string> 
+         </void> 
+         <void property="msgId"> 
+          <string>MESSAGE.IN</string> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="infrastructure.communication.action.GetElementAction"> 
+         <void property="key"> 
+          <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CompositeCurAmt[0].CurAmt.CurCode</string> 
+         </void> 
+         <void property="msgId"> 
+          <string>MESSAGE.IN</string> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="presentation.display.SetTextAction"> 
+         <void property="comp"> 
+          <string>lblAmmount</string> 
+         </void> 
+         <void property="key"> 
+          <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CompositeCurAmt[0].CurAmt.Amt</string> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="infrastructure.communication.action.GetElementAction"> 
+         <void property="key"> 
+          <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CardAcctId[0].AcctType</string> 
+         </void> 
+         <void property="msgId"> 
+          <string>MESSAGE.IN</string> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="presentation.display.SetTextAction"> 
+         <void property="comp"> 
+          <string>lblCurrency</string> 
+         </void> 
+         <void property="key"> 
+          <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CompositeCurAmt[0].CurAmt.CurCode</string> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="infrastructure.communication.action.GetElementAction"> 
+         <void property="key"> 
+          <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.DebitAuthType</string> 
+         </void> 
+         <void property="msgId"> 
+          <string>MESSAGE.IN</string> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="presentation.display.SetTextAction"> 
+         <void property="comp"> 
+          <string>lblAccount</string> 
+         </void> 
+         <void property="key"> 
+          <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CardAcctId[0].AcctType</string> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="presentation.display.SetTextAction"> 
+         <void property="comp"> 
+          <string>lblCardNumber</string> 
+         </void> 
+         <void property="key"> 
+          <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.CardAcctId[0].CardMagData.MagData2</string> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="presentation.display.SetTextAction"> 
+         <void property="comp"> 
+          <string>lblOperation</string> 
+         </void> 
+         <void property="key"> 
+          <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.DebitAuthType</string> 
+         </void> 
+        </object> 
+       </void> 
+      </void> 
+     </void> 
+     <void property="triggers"> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.CreateMessageAction"> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>3a64839c-17ff-40c8-8747-33683bb728b7</string> 
+           </void> 
+           <void property="key"> 
+            <string>MediaSvcRq[0].RqUID</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>3a64839c-17ff-40c8-8747-33683bb728b7</string> 
+           </void> 
+           <void property="key"> 
+            <string>MediaSvcRq[0].DevActionRq[0].RqUID</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; 
+&lt;java version=&quot;1.5.0_04&quot; class=&quot;java.beans.XMLDecoder&quot;&gt; 
+ &lt;object class=&quot;domain.implementation.StateChange&quot;&gt; 
+  &lt;void property=&quot;state&quot;&gt; 
+   &lt;string&gt;ANOTHER_OPERATION&lt;/string&gt; 
+  &lt;/void&gt; 
+ &lt;/object&gt; 
+ &lt;object class=&quot;presentation.display.SetTextAction&quot;&gt; 
+  &lt;void property=&quot;comp&quot;&gt; 
+   &lt;string&gt;lblTitle&lt;/string&gt; 
+  &lt;/void&gt; 
+  &lt;void property=&quot;text&quot;&gt; 
+   &lt;string&gt;Transaction approved&lt;/string&gt; 
+  &lt;/void&gt; 
+ &lt;/object&gt; 
+ &lt;object class=&quot;presentation.display.SetTextAction&quot;&gt; 
+  &lt;void property=&quot;comp&quot;&gt; 
+   &lt;string&gt;lblFirstLine&lt;/string&gt; 
+  &lt;/void&gt; 
+  &lt;void property=&quot;text&quot;&gt; 
+   &lt;string&gt;Please, take your ticket.&lt;/string&gt; 
+  &lt;/void&gt; 
+ &lt;/object&gt; 
+ &lt;object class=&quot;presentation.display.SetTextAction&quot;&gt; 
+  &lt;void property=&quot;comp&quot;&gt; 
+   &lt;string&gt;lblSecondLine&lt;/string&gt; 
+  &lt;/void&gt; 
+  &lt;void property=&quot;text&quot;&gt; 
+   &lt;string&gt;Thanks for your preference.&lt;/string&gt; 
+  &lt;/void&gt; 
+ &lt;/object&gt; 
+ &lt;object class=&quot;infrastructure.communication.action.GetElementAction&quot;&gt; 
+  &lt;void property=&quot;key&quot;&gt; 
+   &lt;string&gt;BankSvcRq[0].DebitAddRq[0].DebitInfo.CardAcctId[0].CardMagData.MagData2&lt;/string&gt; 
+  &lt;/void&gt; 
+  &lt;void property=&quot;msgId&quot;&gt; 
+   &lt;string&gt;MESSAGE.OUT&lt;/string&gt; 
+  &lt;/void&gt; 
+ &lt;/object&gt; 
+ &lt;object class=&quot;infrastructure.communication.action.GetElementAction&quot;&gt; 
+  &lt;void property=&quot;key&quot;&gt; 
+   &lt;string&gt;BankSvcRq[0].DebitAddRq[0].DebitInfo.DebitAuthType&lt;/string&gt; 
+  &lt;/void&gt; 
+  &lt;void property=&quot;msgId&quot;&gt; 
+   &lt;string&gt;MESSAGE.OUT&lt;/string&gt; 
+  &lt;/void&gt; 
+ &lt;/object&gt; 
+ &lt;object class=&quot;infrastructure.communication.action.GetElementAction&quot;&gt; 
+  &lt;void property=&quot;key&quot;&gt; 
+   &lt;string&gt;BankSvcRq[0].DebitAddRq[0].DebitInfo.CardAcctId[0].AcctType&lt;/string&gt; 
+  &lt;/void&gt; 
+  &lt;void property=&quot;msgId&quot;&gt; 
+   &lt;string&gt;MESSAGE.OUT&lt;/string&gt; 
+  &lt;/void&gt; 
+ &lt;/object&gt; 
+ &lt;object class=&quot;infrastructure.communication.action.GetElementAction&quot;&gt; 
+  &lt;void property=&quot;key&quot;&gt; 
+   &lt;string&gt;BankSvcRq[0].DebitAddRq[0].DebitInfo.CompositeCurAmt[0].CurAmt.CurCode&lt;/string&gt; 
+  &lt;/void&gt; 
+  &lt;void property=&quot;msgId&quot;&gt; 
+   &lt;string&gt;MESSAGE.OUT&lt;/string&gt; 
+  &lt;/void&gt; 
+ &lt;/object&gt; 
+ &lt;object class=&quot;infrastructure.communication.action.GetElementAction&quot;&gt; 
+  &lt;void property=&quot;key&quot;&gt; 
+   &lt;string&gt;BankSvcRq[0].DebitAddRq[0].DebitInfo.CompositeCurAmt[0].CurAmt.Amt&lt;/string&gt; 
+  &lt;/void&gt; 
+  &lt;void property=&quot;msgId&quot;&gt; 
+   &lt;string&gt;MESSAGE.OUT&lt;/string&gt; 
+  &lt;/void&gt; 
+ &lt;/object&gt; 
+ &lt;object class=&quot;infrastructure.devices.controllers.ptr.PtrPrintDocAction&quot;&gt; 
+  &lt;void property=&quot;dataKeys&quot;&gt; 
+   &lt;array class=&quot;java.lang.String&quot; length=&quot;6&quot;&gt; 
+    &lt;void index=&quot;0&quot;&gt; 
+     &lt;string&gt;&lt;/string&gt; 
+    &lt;/void&gt; 
+    &lt;void index=&quot;1&quot;&gt; 
+     &lt;string&gt;BankSvcRq[0].DebitAddRq[0].DebitInfo.CardAcctId[0].CardMagData.MagData2&lt;/string&gt; 
+    &lt;/void&gt; 
+    &lt;void index=&quot;2&quot;&gt; 
+     &lt;string&gt;BankSvcRq[0].DebitAddRq[0].DebitInfo.CardAcctId[0].AcctType&lt;/string&gt; 
+    &lt;/void&gt; 
+    &lt;void index=&quot;3&quot;&gt; 
+     &lt;string&gt;BankSvcRq[0].DebitAddRq[0].DebitInfo.CompositeCurAmt[0].CurAmt.CurCode&lt;/string&gt; 
+    &lt;/void&gt; 
+    &lt;void index=&quot;4&quot;&gt; 
+     &lt;string&gt;BankSvcRq[0].DebitAddRq[0].DebitInfo.CompositeCurAmt[0].CurAmt.Amt&lt;/string&gt; 
+    &lt;/void&gt; 
+    &lt;void index=&quot;5&quot;&gt; 
+     &lt;string&gt;&lt;/string&gt; 
+    &lt;/void&gt; 
+   &lt;/array&gt; 
+  &lt;/void&gt; 
+  &lt;void property=&quot;deviceName&quot;&gt; 
+   &lt;string&gt;DocuPrinter&lt;/string&gt; 
+  &lt;/void&gt; 
+  &lt;void property=&quot;labels&quot;&gt; 
+   &lt;array class=&quot;java.lang.String&quot; length=&quot;6&quot;&gt; 
+    &lt;void index=&quot;0&quot;&gt; 
+     &lt;string&gt;Withdrawal Bill&lt;/string&gt; 
+    &lt;/void&gt; 
+    &lt;void index=&quot;1&quot;&gt; 
+     &lt;string&gt;Card Number&lt;/string&gt; 
+    &lt;/void&gt; 
+    &lt;void index=&quot;2&quot;&gt; 
+     &lt;string&gt;Account&lt;/string&gt; 
+    &lt;/void&gt; 
+    &lt;void index=&quot;3&quot;&gt; 
+     &lt;string&gt;Currency&lt;/string&gt; 
+    &lt;/void&gt; 
+    &lt;void index=&quot;4&quot;&gt; 
+     &lt;string&gt;Ammount&lt;/string&gt; 
+    &lt;/void&gt; 
+    &lt;void index=&quot;5&quot;&gt; 
+     &lt;string&gt;Thank you!&lt;/string&gt; 
+    &lt;/void&gt; 
+   &lt;/array&gt; 
+  &lt;/void&gt; 
+ &lt;/object&gt; 
+&lt;/java&gt; 
+</string> 
+           </void> 
+           <void property="key"> 
+            <string>MediaSvcRq[0].DevActionRq[0].ActionsInfo[0]</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SendMessageAction"> 
+           <void property="channelName"> 
+            <string>ATM_REQUEST_CHANNEL</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>MAIN_PANEL_STATE</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>WITHDRAWAL_STATE</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnYes</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.CreateMessageAction"> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>3a64839c-17ff-40c8-8747-33683bb728b7</string> 
+           </void> 
+           <void property="key"> 
+            <string>MediaSvcRq[0].RqUID</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>3a64839c-17ff-40c8-8747-33683bb728b7</string> 
+           </void> 
+           <void property="key"> 
+            <string>MediaSvcRq[0].DevActionRq[0].RqUID</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; 
+&lt;java version=&quot;1.5.0_04&quot; class=&quot;java.beans.XMLDecoder&quot;&gt; 
+ &lt;object class=&quot;domain.implementation.StateChange&quot;&gt; 
+  &lt;void property=&quot;state&quot;&gt; 
+   &lt;string&gt;ANOTHER_OPERATION&lt;/string&gt; 
+  &lt;/void&gt; 
+ &lt;/object&gt; 
+ &lt;object class=&quot;presentation.display.SetTextAction&quot;&gt; 
+  &lt;void property=&quot;comp&quot;&gt; 
+   &lt;string&gt;lblTitle&lt;/string&gt; 
+  &lt;/void&gt; 
+  &lt;void property=&quot;text&quot;&gt; 
+   &lt;string&gt;Transaction rejected&lt;/string&gt; 
+  &lt;/void&gt; 
+ &lt;/object&gt; 
+ &lt;object class=&quot;presentation.display.SetTextAction&quot;&gt; 
+  &lt;void property=&quot;comp&quot;&gt; 
+   &lt;string&gt;lblFirstLine&lt;/string&gt; 
+  &lt;/void&gt; 
+  &lt;void property=&quot;text&quot;&gt; 
+   &lt;string&gt;Fraudulent operation detected!&lt;/string&gt; 
+  &lt;/void&gt; 
+ &lt;/object&gt; 
+ &lt;object class=&quot;presentation.display.SetTextAction&quot;&gt; 
+  &lt;void property=&quot;comp&quot;&gt; 
+   &lt;string&gt;lblSecondLine&lt;/string&gt; 
+  &lt;/void&gt; 
+  &lt;void property=&quot;text&quot;&gt; 
+   &lt;string&gt;Please, go to jail. Thanks.&lt;/string&gt; 
+  &lt;/void&gt; 
+ &lt;/object&gt; 
+&lt;/java&gt; 
+</string> 
+           </void> 
+           <void property="key"> 
+            <string>MediaSvcRq[0].DevActionRq[0].ActionsInfo[0]</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SendMessageAction"> 
+           <void property="channelName"> 
+            <string>ATM_REQUEST_CHANNEL</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>MAIN_PANEL_STATE</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>WITHDRAWAL_STATE</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnNo</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object class="domain.state.StateBean"> 
+     <void property="name"> 
+      <string>INITIAL_STATE</string> 
+     </void> 
+     <void property="startupTrigger"> 
+      <void property="actions"> 
+       <void method="add"> 
+        <object class="infrastructure.communication.action.CreateMessageAction"> 
+         <void property="msgId"> 
+          <string>MESSAGE.OUT</string> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="infrastructure.communication.action.ConnectChannel"> 
+         <void property="channelName"> 
+          <string>ATM_REQUEST_CHANNEL</string> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="presentation.display.DisplayAloneAction"> 
+         <void property="screen"> 
+          <string>cfg/demo/server/screen/D1_AtmDisconnected.xml</string> 
+         </void> 
+        </object> 
+       </void> 
+      </void> 
+     </void> 
+     <void property="triggers"> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="domain.implementation.DebugAction"> 
+           <void property="outputText"> 
+            <string>Se conecto al ATM_REQ_CH</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>INITIAL_STATE</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>ATM_REQUEST_CHANNEL</string> 
+        </void> 
+        <void property="type"> 
+         <string>CONNECT_TYPE</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.implementation.CountBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>CONNECT_ATM_STATE</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="count"> 
+         <int>1</int> 
+        </void> 
+        <void property="countTriggers"> 
+         <object class="java.util.Vector"> 
+          <void method="add"> 
+           <object class="domain.implementation.TriggerValues"> 
+            <void property="thrower"> 
+             <string>ATM_REQUEST_CHANNEL</string> 
+            </void> 
+            <void property="type"> 
+             <string>CONNECT_TYPE</string> 
+            </void> 
+           </object> 
+          </void> 
+         </object> 
+        </void> 
+        <void property="state"> 
+         <string>INITIAL_STATE</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>COUNT_TRIGGER_THROWER</string> 
+        </void> 
+        <void property="type"> 
+         <string>COUNT_TRIGGER_TYPE</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="domain.implementation.SystemExit"/> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>INITIAL_STATE</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnExit</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object class="domain.state.StateBean"> 
+     <void property="name"> 
+      <string>MAIN_PANEL_STATE</string> 
+     </void> 
+     <void property="startupTrigger"> 
+      <void property="actions"> 
+       <void method="add"> 
+        <object class="presentation.display.DisplayAloneAction"> 
+         <void property="screen"> 
+          <string>cfg/demo/server/screen/D1_MainPanel.xml</string> 
+         </void> 
+        </object> 
+       </void> 
+      </void> 
+     </void> 
+     <void property="triggers"> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.CreateMessageAction"> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>3a64839c-17ff-40c8-8747-33683bb728b7</string> 
+           </void> 
+           <void property="key"> 
+            <string>MediaSvcRq[0].RqUID</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>3a64839c-17ff-40c8-8747-33683bb728b7</string> 
+           </void> 
+           <void property="key"> 
+            <string>MediaSvcRq[0].DevActionRq[0].RqUID</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; 
+&lt;java version=&quot;1.5.0_04&quot; class=&quot;java.beans.XMLDecoder&quot;&gt; 
+ &lt;object class=&quot;domain.implementation.SystemExit&quot;/&gt; 
+&lt;/java&gt; 
+</string> 
+           </void> 
+           <void property="key"> 
+            <string>MediaSvcRq[0].DevActionRq[0].ActionsInfo[0]</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SendMessageAction"> 
+           <void property="channelName"> 
+            <string>HOST_COMMAND_CHANNEL</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.ClearMessageAction"> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>MAIN_PANEL_STATE</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnShutdown</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.CreateMessageAction"> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>3a64839c-17ff-40c8-8747-33683bb728b7</string> 
+           </void> 
+           <void property="key"> 
+            <string>MediaSvcRq[0].RqUID</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>3a64839c-17ff-40c8-8747-33683bb728b7</string> 
+           </void> 
+           <void property="key"> 
+            <string>MediaSvcRq[0].DevActionRq[0].RqUID</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; 
+&lt;java version=&quot;1.5.0_04&quot; class=&quot;java.beans.XMLDecoder&quot;&gt; 
+ &lt;object class=&quot;domain.implementation.StateChange&quot;&gt; 
+  &lt;void property=&quot;state&quot;&gt; 
+   &lt;string&gt;INSERT_CARD&lt;/string&gt; 
+  &lt;/void&gt; 
+ &lt;/object&gt; 
+&lt;/java&gt; 
+</string> 
+           </void> 
+           <void property="key"> 
+            <string>MediaSvcRq[0].DevActionRq[0].ActionsInfo[0]</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SendMessageAction"> 
+           <void property="channelName"> 
+            <string>HOST_COMMAND_CHANNEL</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.DebugAction"> 
+           <void property="outputText"> 
+            <string>InService presionado</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>MAIN_PANEL_STATE</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnInService</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.CreateMessageAction"> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>3a64839c-17ff-40c8-8747-33683bb728b7</string> 
+           </void> 
+           <void property="key"> 
+            <string>MediaSvcRq[0].RqUID</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>3a64839c-17ff-40c8-8747-33683bb728b7</string> 
+           </void> 
+           <void property="key"> 
+            <string>MediaSvcRq[0].DevActionRq[0].RqUID</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SetElementAction"> 
+           <void property="defaultValue"> 
+            <string></string> 
+           </void> 
+           <void property="element"> 
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; 
+&lt;java version=&quot;1.5.0_04&quot; class=&quot;java.beans.XMLDecoder&quot;&gt; 
+ &lt;object class=&quot;domain.implementation.StateChange&quot;&gt; 
+  &lt;void property=&quot;state&quot;&gt; 
+   &lt;string&gt;OUT_OF_SERVICE&lt;/string&gt; 
+  &lt;/void&gt; 
+ &lt;/object&gt; 
+&lt;/java&gt; 
+</string> 
+           </void> 
+           <void property="key"> 
+            <string>MediaSvcRq[0].DevActionRq[0].ActionsInfo[0]</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.SendMessageAction"> 
+           <void property="channelName"> 
+            <string>HOST_COMMAND_CHANNEL</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.OUT</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>MAIN_PANEL_STATE</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnOutOfService</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="domain.implementation.SystemExit"/> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>MAIN_PANEL_STATE</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>btnExit</string> 
+        </void> 
+        <void property="type"> 
+         <string>BUTTON_PRESSED</string> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object class="domain.state.StateBean"> 
+     <void property="name"> 
+      <string>CONNECT_ATM_STATE</string> 
+     </void> 
+     <void property="startupTrigger"> 
+      <void property="actions"> 
+       <void method="add"> 
+        <object class="infrastructure.communication.action.ConnectChannel"> 
+         <void property="channelName"> 
+          <string>HOST_COMMAND_CHANNEL</string> 
+         </void> 
+        </object> 
+       </void> 
+      </void> 
+     </void> 
+     <void property="triggers"> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="state"> 
+         <string>CONNECT_ATM_STATE</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>HOST_COMMAND_CHANNEL</string> 
+        </void> 
+        <void property="type"> 
+         <string>CONNECT_TYPE</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.implementation.CountBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>MAIN_PANEL_STATE</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="count"> 
+         <int>1</int> 
+        </void> 
+        <void property="countTriggers"> 
+         <object class="java.util.Vector"> 
+          <void method="add"> 
+           <object class="domain.implementation.TriggerValues"> 
+            <void property="thrower"> 
+             <string>HOST_COMMAND_CHANNEL</string> 
+            </void> 
+            <void property="type"> 
+             <string>CONNECT_TYPE</string> 
+            </void> 
+           </object> 
+          </void> 
+         </object> 
+        </void> 
+        <void property="state"> 
+         <string>CONNECT_ATM_STATE</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>COUNT_TRIGGER_THROWER</string> 
+        </void> 
+        <void property="type"> 
+         <string>COUNT_TRIGGER_TYPE</string> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object class="domain.state.StateBean"> 
+     <void property="name"> 
+      <string>GLOBAL_STATE</string> 
+     </void> 
+     <void property="triggers"> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="domain.implementation.PersistAction"> 
+           <void property="sourceKey"> 
+            <string>MESSAGE</string> 
+           </void> 
+           <void property="targetKey"> 
+            <string>MESSAGE.IN</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.GetElementAction"> 
+           <void property="key"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.DebitAuthType</string> 
+           </void> 
+           <void property="msgId"> 
+            <string>MESSAGE.IN</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.ConditionalAction"> 
+           <void property="key"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.DebitAuthType</string> 
+           </void> 
+           <void property="thrower"> 
+            <string>ATM_REQUEST_THROWER</string> 
+           </void> 
+           <void property="type"> 
+            <string>WITHDRAWAL_TYPE</string> 
+           </void> 
+           <void property="value"> 
+            <string>Withdrawal</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.ConditionalAction"> 
+           <void property="key"> 
+            <string>BankSvcRq[0].DebitAddRq[0].DebitInfo.DebitAuthType</string> 
+           </void> 
+           <void property="thrower"> 
+            <string>ATM_REQUEST_THROWER</string> 
+           </void> 
+           <void property="type"> 
+            <string>PIN_CHANGE_TYPE</string> 
+           </void> 
+           <void property="value"> 
+            <string>PIN Change</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>GLOBAL_STATE</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>ATM_REQUEST_CHANNEL</string> 
+        </void> 
+        <void property="type"> 
+         <string>COMM_TYPE</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>WITHDRAWAL_STATE</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>GLOBAL_STATE</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>ATM_REQUEST_THROWER</string> 
+        </void> 
+        <void property="type"> 
+         <string>WITHDRAWAL_TYPE</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>WITHDRAWAL_STATE</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>GLOBAL_STATE</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>ATM_REQUEST_THROWER</string> 
+        </void> 
+        <void property="type"> 
+         <string>PIN_CHANGE_TYPE</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="domain.state.TriggerBean"> 
+        <void property="actions"> 
+         <void method="add"> 
+          <object class="domain.implementation.DebugAction"> 
+           <void property="outputText"> 
+            <string>Se ha perdido la conexion con el atm</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.DisconnectChannel"> 
+           <void property="channelName"> 
+            <string>HOST_COMMAND_CHANNEL</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="infrastructure.communication.action.DisconnectChannel"> 
+           <void property="channelName"> 
+            <string>ATM_REQUEST_CHANNEL</string> 
+           </void> 
+          </object> 
+         </void> 
+         <void method="add"> 
+          <object class="domain.implementation.StateChange"> 
+           <void property="state"> 
+            <string>INITIAL_STATE</string> 
+           </void> 
+          </object> 
+         </void> 
+        </void> 
+        <void property="state"> 
+         <string>GLOBAL_STATE</string> 
+        </void> 
+        <void property="thrower"> 
+         <string>HOST_COMMAND_CHANNEL</string> 
+        </void> 
+        <void property="type"> 
+         <string>DISCONNECT_TYPE</string> 
+        </void> 
+       </object> 
+      </void> 
+     </void> 
+    </object> 
+   </void> 
+  </void> 
+ </object> 
+</java> 

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.5.0_04" class="java.beans.XMLDecoder"> 
+ <object class="java.util.LinkedHashMap"> 
+  <void method="put"> 
+   <string>DEVICE_MANAGER</string> 
+   <string>infrastructure.devices.controllers.jxfs.DeviceManager</string> 
+  </void> 
+  <void method="put"> 
+   <string>CONTEXT</string> 
+   <object class="java.util.HashMap"> 
+    <void method="put"> 
+     <string>JXFS_SDM_NAME</string> 
+     <string>com.jxfs.forum.communication.rmi.SpecificDeviceManagerRMI</string> 
+    </void> 
+    <void method="put"> 
+     <string>JXFS_SDM_ADDPARMCOUNT</string> 
+     <int>1</int> 
+    </void> 
+    <void method="put"> 
+     <string>JXFS_SDM_ADDPARM_</string> 
+     <string>2323;localhost</string> 
+    </void> 
+    <void method="put"> 
+     <string>JXFS_LOG_FILE_NAME</string> 
+     <string>logs/jxfsClient.log</string> 
+    </void> 
+    <void method="put"> 
+     <string>JXFS_WORKSTATION_NAME</string> 
+     <string>developerWorks</string> 
+    </void> 
+    <void method="put"> 
+     <string>JXFS_CONFIG_KEY</string> 
+     <string>jxfsClient</string> 
+    </void> 
+    <void method="put"> 
+     <string>JXFS_DEVICES_INFO</string> 
+     <object class="java.util.Vector"> 
+      <void method="add"> 
+       <object class="java.util.HashMap"> 
+        <void method="put"> 
+         <string>TIO_MODE</string> 
+         <int>0</int> 
+        </void> 
+        <void method="put"> 
+         <string>JXFS_DEVICE_CLASS</string> 
+         <string>infrastructure.devices.controllers.jxfs.JxfsTioController</string> 
+        </void> 
+        <void method="put"> 
+         <string>JXFS_DEVICE_IMAGE_PATH</string> 
+         <string>tiopath</string> 
+        </void> 
+        <void method="put"> 
+         <string>JXFS_DEVICE_TITLE</string> 
+         <string>TextInOut</string> 
+        </void> 
+        <void method="put"> 
+         <string>TIO_NUM_OF_CHARS</string> 
+         <int>4</int> 
+        </void> 
+        <void method="put"> 
+         <string>TIO_AUTOEND</string> 
+         <boolean>false</boolean> 
+        </void> 
+        <void method="put"> 
+         <string>JXFS_DEVICE_NAME</string> 
+         <string>TextInOut</string> 
+        </void> 
+        <void method="put"> 
+         <string>TIO_FLUSH</string> 
+         <boolean>true</boolean> 
+        </void> 
+        <void method="put"> 
+         <string>TIO_DISPLAY_LIGHT_ON</string> 
+         <boolean>true</boolean> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="java.util.HashMap"> 
+        <void method="put"> 
+         <string>MSD_TRACK2_SELECTED</string> 
+         <boolean>true</boolean> 
+        </void> 
+        <void method="put"> 
+         <string>MSD_TRACK1_SELECTED</string> 
+         <boolean>true</boolean> 
+        </void> 
+        <void method="put"> 
+         <string>JXFS_DEVICE_CLASS</string> 
+         <string>infrastructure.devices.controllers.jxfs.JxfsMsdController</string> 
+        </void> 
+        <void method="put"> 
+         <string>MSD_TRACK3_SELECTED</string> 
+         <boolean>true</boolean> 
+        </void> 
+        <void method="put"> 
+         <string>JXFS_DEVICE_IMAGE_PATH</string> 
+         <string>magstripepath</string> 
+        </void> 
+        <void method="put"> 
+         <string>JXFS_DEVICE_TITLE</string> 
+         <string>MagStripe</string> 
+        </void> 
+        <void method="put"> 
+         <string>JXFS_DEVICE_NAME</string> 
+         <string>MagStripe</string> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="java.util.HashMap"> 
+        <void method="put"> 
+         <string>JXFS_DEVICE_CLASS</string> 
+         <string>infrastructure.devices.controllers.jxfs.JxfsPtrController</string> 
+        </void> 
+        <void method="put"> 
+         <string>JXFS_DEVICE_IMAGE_PATH</string> 
+         <string>printerpath</string> 
+        </void> 
+        <void method="put"> 
+         <string>JXFS_DEVICE_NAME</string> 
+         <string>DocuPrinter</string> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+ </object> 
+</java> 

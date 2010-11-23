@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.4.2_06" class="java.beans.XMLDecoder"> 
+ <object class="java.util.HashMap"> 
+  <void method="put"> 
+   <string>VALUES</string> 
+   <string>javax.swing.plaf.ColorUIResource,javax.swing.plaf.FontUIResource,java.awt.Rectangle,java.lang.String,java.lang.Integer,java.lang.Long</string> 
+  </void> 
+  <void method="put"> 
+   <string>TYPES</string> 
+   <string>javax.swing.plaf.ColorUIResource,javax.swing.plaf.FontUIResource,java.lang.String,java.lang.Integer,java.lang.Long</string> 
+  </void> 
+  <void method="put"> 
+   <string>javax.swing.plaf.ColorUIResource</string> 
+   <string>tools.screeneditor.graphics.validtypes.ColorMenuType</string> 
+  </void> 
+  <void method="put"> 
+   <string>javax.swing.plaf.FontUIResource</string> 
+   <string>tools.screeneditor.graphics.validtypes.FontMenuType</string> 
+  </void> 
+  <void method="put"> 
+   <string>java.lang.String</string> 
+   <string>tools.screeneditor.graphics.validtypes.StringMenuType</string> 
+  </void>
+  <void method="put"> 
+   <string>java.lang.Integer</string> 
+   <string>tools.screeneditor.graphics.validtypes.IntegerMenuType</string> 
+  </void>
+  <void method="put"> 
+   <string>java.lang.Long</string> 
+   <string>tools.screeneditor.graphics.validtypes.LongMenuType</string> 
+  </void>
+  </object> 
+</java> 

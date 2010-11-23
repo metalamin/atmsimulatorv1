@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.5.0_05" class="java.beans.XMLDecoder"> 
+ <object class="java.util.HashMap"> 
+  <void method="put"> 
+   <class>java.lang.Long</class> 
+   <class>tools.stateeditor.datatransform.LongDataTransform</class> 
+  </void> 
+  <void method="put"> 
+   <class>java.lang.Integer</class> 
+   <class>tools.stateeditor.datatransform.IntegerDataTransform</class> 
+  </void> 
+ </object> 
+</java> 
